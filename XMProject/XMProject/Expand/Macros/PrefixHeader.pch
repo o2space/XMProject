@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  XMProject
+//
+//  Created by wukexiu on 16/12/12.
+//  Copyright © 2016年 wukexiu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "macros.h"
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "NSString+Extension.h"
+
+#endif /* PrefixHeader_pch */
