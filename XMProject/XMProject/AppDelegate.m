@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "XMLoginTool.h"
 #import "XMControllerTool.h"
+#import "RootTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,6 +33,7 @@
     //2.显示窗口
     [self.window makeKeyAndVisible];
     //3.设置窗口的根控制器
+    //self.window.rootViewController=[[RootTabViewController alloc] init];
     [XMControllerTool chooseRootViewController];
     return YES;
 }

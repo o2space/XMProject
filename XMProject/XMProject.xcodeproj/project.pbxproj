@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161ABC7D1E02DF68004C7C6E /* DestRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC6E1E02DF68004C7C6E /* DestRootController.m */; };
+		161ABC7E1E02DF68004C7C6E /* DynamicRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC701E02DF68004C7C6E /* DynamicRootController.m */; };
+		161ABC7F1E02DF68004C7C6E /* FindRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC721E02DF68004C7C6E /* FindRootController.m */; };
+		161ABC801E02DF68004C7C6E /* SquareRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC741E02DF68004C7C6E /* SquareRootController.m */; };
+		161ABC811E02DF68004C7C6E /* CityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC781E02DF68004C7C6E /* CityCollectionViewCell.m */; };
+		161ABC821E02DF68004C7C6E /* CityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC791E02DF68004C7C6E /* CityCollectionViewCell.xib */; };
+		161ABC831E02DF68004C7C6E /* CityHeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC7B1E02DF68004C7C6E /* CityHeadCollectionReusableView.m */; };
+		161ABC841E02DF68004C7C6E /* CityHeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */; };
+		161ABC881E02E166004C7C6E /* RssRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC861E02E166004C7C6E /* RssRootController.m */; };
+		161ABC891E02E166004C7C6E /* RssRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC871E02E166004C7C6E /* RssRootController.xib */; };
 		16690D391DFEA9B30053A30B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D381DFEA9B30053A30B /* main.m */; };
 		16690D3C1DFEA9B30053A30B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D3B1DFEA9B30053A30B /* AppDelegate.m */; };
 		16690D3F1DFEA9B30053A30B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D3E1DFEA9B30053A30B /* ViewController.m */; };
@@ -76,6 +86,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161ABC6D1E02DF68004C7C6E /* DestRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestRootController.h; sourceTree = "<group>"; };
+		161ABC6E1E02DF68004C7C6E /* DestRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestRootController.m; sourceTree = "<group>"; };
+		161ABC6F1E02DF68004C7C6E /* DynamicRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicRootController.h; sourceTree = "<group>"; };
+		161ABC701E02DF68004C7C6E /* DynamicRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicRootController.m; sourceTree = "<group>"; };
+		161ABC711E02DF68004C7C6E /* FindRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRootController.h; sourceTree = "<group>"; };
+		161ABC721E02DF68004C7C6E /* FindRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRootController.m; sourceTree = "<group>"; };
+		161ABC731E02DF68004C7C6E /* SquareRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareRootController.h; sourceTree = "<group>"; };
+		161ABC741E02DF68004C7C6E /* SquareRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareRootController.m; sourceTree = "<group>"; };
+		161ABC771E02DF68004C7C6E /* CityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCollectionViewCell.h; sourceTree = "<group>"; };
+		161ABC781E02DF68004C7C6E /* CityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCollectionViewCell.m; sourceTree = "<group>"; };
+		161ABC791E02DF68004C7C6E /* CityCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCollectionViewCell.xib; sourceTree = "<group>"; };
+		161ABC7A1E02DF68004C7C6E /* CityHeadCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHeadCollectionReusableView.h; sourceTree = "<group>"; };
+		161ABC7B1E02DF68004C7C6E /* CityHeadCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHeadCollectionReusableView.m; sourceTree = "<group>"; };
+		161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityHeadCollectionReusableView.xib; sourceTree = "<group>"; };
+		161ABC851E02E166004C7C6E /* RssRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssRootController.h; sourceTree = "<group>"; };
+		161ABC861E02E166004C7C6E /* RssRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssRootController.m; sourceTree = "<group>"; };
+		161ABC871E02E166004C7C6E /* RssRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RssRootController.xib; sourceTree = "<group>"; };
 		16690D341DFEA9B30053A30B /* XMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16690D381DFEA9B30053A30B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16690D3A1DFEA9B30053A30B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -207,6 +234,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161ABC6C1E02DF68004C7C6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				161ABC6D1E02DF68004C7C6E /* DestRootController.h */,
+				161ABC6E1E02DF68004C7C6E /* DestRootController.m */,
+				161ABC6F1E02DF68004C7C6E /* DynamicRootController.h */,
+				161ABC701E02DF68004C7C6E /* DynamicRootController.m */,
+				161ABC711E02DF68004C7C6E /* FindRootController.h */,
+				161ABC721E02DF68004C7C6E /* FindRootController.m */,
+				161ABC731E02DF68004C7C6E /* SquareRootController.h */,
+				161ABC741E02DF68004C7C6E /* SquareRootController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		161ABC751E02DF68004C7C6E /* NYSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NYSegmentedControl;
+			sourceTree = "<group>";
+		};
+		161ABC761E02DF68004C7C6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				161ABC771E02DF68004C7C6E /* CityCollectionViewCell.h */,
+				161ABC781E02DF68004C7C6E /* CityCollectionViewCell.m */,
+				161ABC791E02DF68004C7C6E /* CityCollectionViewCell.xib */,
+				161ABC7A1E02DF68004C7C6E /* CityHeadCollectionReusableView.h */,
+				161ABC7B1E02DF68004C7C6E /* CityHeadCollectionReusableView.m */,
+				161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		16690D2B1DFEA9B30053A30B = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +577,9 @@
 		1677884A1E02BC4400CC80B4 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				161ABC6C1E02DF68004C7C6E /* Controller */,
+				161ABC751E02DF68004C7C6E /* NYSegmentedControl */,
+				161ABC761E02DF68004C7C6E /* View */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -522,6 +587,9 @@
 		1677884B1E02BC4400CC80B4 /* Rss */ = {
 			isa = PBXGroup;
 			children = (
+				161ABC851E02E166004C7C6E /* RssRootController.h */,
+				161ABC861E02E166004C7C6E /* RssRootController.m */,
+				161ABC871E02E166004C7C6E /* RssRootController.xib */,
 			);
 			path = Rss;
 			sourceTree = "<group>";
@@ -747,7 +815,10 @@
 			files = (
 				16690D4A1DFEA9B30053A30B /* LaunchScreen.storyboard in Resources */,
 				167789251E02CB9800CC80B4 /* PushAlbumCollectionCell.xib in Resources */,
+				161ABC891E02E166004C7C6E /* RssRootController.xib in Resources */,
 				167788A11E02BCCD00CC80B4 /* RecruitCardItemView.xib in Resources */,
+				161ABC821E02DF68004C7C6E /* CityCollectionViewCell.xib in Resources */,
+				161ABC841E02DF68004C7C6E /* CityHeadCollectionReusableView.xib in Resources */,
 				1677888D1E02BCCD00CC80B4 /* AlbumCardMoreCell.xib in Resources */,
 				167788911E02BCCD00CC80B4 /* ChoiceCardItemView.xib in Resources */,
 				16690D471DFEA9B30053A30B /* Assets.xcassets in Resources */,
@@ -779,7 +850,10 @@
 				167788E51E02C16B00CC80B4 /* MJRefreshBackNormalFooter.m in Sources */,
 				16690D901DFEB5360053A30B /* XMLoginTool.m in Sources */,
 				16690D661DFEACE00053A30B /* XMNetworkManager.m in Sources */,
+				161ABC801E02DF68004C7C6E /* SquareRootController.m in Sources */,
 				167788DF1E02C16B00CC80B4 /* MJRefreshFooter.m in Sources */,
+				161ABC831E02DF68004C7C6E /* CityHeadCollectionReusableView.m in Sources */,
+				161ABC7E1E02DF68004C7C6E /* DynamicRootController.m in Sources */,
 				16690D9C1DFEC11A0053A30B /* NewFeatureViewController.m in Sources */,
 				1677888E1E02BCCD00CC80B4 /* AlbumCardMoreView.m in Sources */,
 				167788E01E02C16B00CC80B4 /* MJRefreshHeader.m in Sources */,
@@ -802,6 +876,7 @@
 				16690D641DFEACE00053A30B /* NetResponse.m in Sources */,
 				16690D8D1DFEB4F10053A30B /* XMControllerTool.m in Sources */,
 				167788EC1E02C16B00CC80B4 /* UIScrollView+MJExtension.m in Sources */,
+				161ABC881E02E166004C7C6E /* RssRootController.m in Sources */,
 				167788A01E02BCCD00CC80B4 /* RecruitCardItemView.m in Sources */,
 				16690D7C1DFEB2F80053A30B /* RDVTabBarController.m in Sources */,
 				16690D851DFEB4300053A30B /* RootTabViewController.m in Sources */,
@@ -817,10 +892,13 @@
 				16690D451DFEA9B30053A30B /* XMProject.xcdatamodeld in Sources */,
 				16690D7B1DFEB2F80053A30B /* RDVTabBar.m in Sources */,
 				1677891A1E02C44600CC80B4 /* UILabel+XM.swift in Sources */,
+				161ABC811E02DF68004C7C6E /* CityCollectionViewCell.m in Sources */,
 				167788E31E02C16B00CC80B4 /* MJRefreshAutoStateFooter.m in Sources */,
 				167788DC1E02C16B00CC80B4 /* MJRefreshAutoFooter.m in Sources */,
+				161ABC7F1E02DF68004C7C6E /* FindRootController.m in Sources */,
 				167788901E02BCCD00CC80B4 /* ChoiceCardItemView.m in Sources */,
 				16690D391DFEA9B30053A30B /* main.m in Sources */,
+				161ABC7D1E02DF68004C7C6E /* DestRootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

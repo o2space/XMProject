@@ -12,6 +12,11 @@
 #import "XMLoginTool.h"
 
 #import "RecommendViewController.h"
+#import "RssRootController.h"
+#import "FindRootController.h"
+#import "DestRootController.h"
+#import "DynamicRootController.h"
+#import "SquareRootController.h"
 
 @interface RootTabViewController ()
 
@@ -45,15 +50,10 @@
     
     RecommendViewController *vc_recommend=[[RecommendViewController alloc] init];
     XMNavigationViewController *nav_recommend=[[XMNavigationViewController alloc] initWithRootViewController:vc_recommend];
-    /*
-    TGLHomepageController *vc_home=[[TGLHomepageController alloc] initWithNibName:@"TGLHomepageController" bundle:nil];
-    XMNavigationViewController *nav_home=[[XMNavigationViewController alloc] initWithRootViewController:vc_home];
-    */
     
-    //FindViewController *vc_find=[[FindViewController alloc] init];
-    //TGLNavigationViewController *nav_find=[[TGLNavigationViewController alloc] initWithRootViewController:vc_find];
+    RssRootController *vc_rss=[[RssRootController alloc] init];
+    XMNavigationViewController *nav_rss=[[XMNavigationViewController alloc] initWithRootViewController:vc_rss];
     
-    /*
     FindRootController *nav_find=[FindRootController newSwipeBetweenViewControllers];
     [nav_find.viewControllerArray addObjectsFromArray:@[[[DestRootController alloc] init],
                                                         [[DynamicRootController alloc] init],
@@ -62,8 +62,11 @@
     nav_find.buttonImages=@[@"nav_title_img_dest",@"nav_title_img_dynamic",@"nav_title_img_square"];
     nav_find.pageSelected=@[@"nav_page_selected_yellow",@"nav_page_selected_green",@"nav_page_selected_red"];
     nav_find.pageUnselected=@[@"nav_page_unselected",@"nav_page_unselected",@"nav_page_unselected"];
-    */
+    
 
+    RssRootController *vc_rss2=[[RssRootController alloc] init];
+    XMNavigationViewController *nav_rss2=[[XMNavigationViewController alloc] initWithRootViewController:vc_rss2];
+    
     /*
     DiscoverRootController *vc_discover=[[DiscoverRootController alloc] initWithNibName:@"DiscoverRootController" bundle:nil];
     XMNavigationViewController *nav_discover=[[XMNavigationViewController alloc] initWithRootViewController:vc_discover];
@@ -79,12 +82,12 @@
     MeRootController *vc_me=[[MeRootController alloc] initWithNibName:@"MeRootController" bundle:nil];
     XMNavigationViewController *nav_me;
     nav_me = [[XMNavigationViewController alloc] initWithRootViewController:vc_mephotog];
-    
-    [self setViewControllers:@[nav_home,nav_discover,nav_message,nav_me]];
+    */
+    [self setViewControllers:@[nav_recommend,nav_rss,nav_find,nav_rss2]];
     [self customizeTabBarForController];
     self.delegate=self;
     self.selectedIndex = 0;
-     */
+     
 }
 -(void)customizeTabBarForController{
     UIImage *backgroundImage=[UIImage imageWithColor:XMUIColor(255, 255, 255, 0.85) withFrame:CGRectMake(0, 0, kScreen_Width, 50)];

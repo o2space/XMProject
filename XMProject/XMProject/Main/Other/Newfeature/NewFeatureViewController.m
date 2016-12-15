@@ -36,7 +36,8 @@
     CGFloat imageH=scrollView.height;
     for (int i=0; i<NewfeatureImageCount; i++) {
         UIImageView *imageView=[[UIImageView alloc] init];
-        NSString *name=[NSString stringWithFormat:@"new_feature_%d",i+1];
+        //NSString *name=[NSString stringWithFormat:@"new_feature_%d",i+1];
+        NSString *name = @"coolStart_guide_bg";
         if(FourInch){
             //name=[name stringByAppendingString:@"-568h"];
         }
