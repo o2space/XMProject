@@ -69,14 +69,14 @@
     
     _unselectedTitleAttributes = @{
                                    NSFontAttributeName: [UIFont systemFontOfSize:10],
-                                   NSForegroundColorAttributeName: kXMColor(255, 255, 255, 0.5),
+                                   NSForegroundColorAttributeName: XMUIColor(255, 255, 255, 0.5),
                                    };
     _selectedTitleAttributes = @{
                                  NSFontAttributeName: [UIFont systemFontOfSize:10],
-                                 NSForegroundColorAttributeName: kXMColor(249, 98, 104, 1.0),
+                                 NSForegroundColorAttributeName: XMUIColor(249, 98, 104, 1.0),
                                  };
     
-    _badgeBackgroundColor = kXMColor(247, 83, 136, 1.0);
+    _badgeBackgroundColor = XMUIColor(247, 83, 136, 1.0);
     _badgeTextColor = [UIColor whiteColor];
     if (kDevice_Is_iPhone6 || kDevice_Is_iPhone6Plus) {
         _badgeTextFont = [UIFont systemFontOfSize:12];

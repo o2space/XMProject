@@ -14,4 +14,6 @@
 #import "UIImage+Extension.h"
 #import "NSString+Extension.h"
 
+#import "XMProject-Swift.h"
+
 #endif /* PrefixHeader_pch */

@@ -55,7 +55,7 @@
     //设置活动范围
     scrollView.contentSize=CGSizeMake(NewfeatureImageCount*imageW, 0);
     //设置背景颜色
-    scrollView.backgroundColor=kXMColor(246, 246, 246, 1.0);
+    scrollView.backgroundColor=XMUIColor(246, 246, 246, 1.0);
     //隐藏水平滚动条
     scrollView.showsHorizontalScrollIndicator=NO;
     //去除弹簧效果
@@ -67,8 +67,8 @@
     pageControl.numberOfPages=NewfeatureImageCount;
     pageControl.center=CGPointMake(self.view.width*0.5, self.view.height-30);
     [self.view addSubview:pageControl];
-    pageControl.currentPageIndicatorTintColor=kXMColor(253, 98, 42, 1.0);
-    pageControl.pageIndicatorTintColor=kXMColor(189, 189, 189, 1.0);
+    pageControl.currentPageIndicatorTintColor=XMUIColor(253, 98, 42, 1.0);
+    pageControl.pageIndicatorTintColor=XMUIColor(189, 189, 189, 1.0);
     self.pageControl=pageControl;
 }
 

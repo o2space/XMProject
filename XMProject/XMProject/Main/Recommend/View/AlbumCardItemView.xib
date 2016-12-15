@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCardCell" id="gTV-IL-0wX" customClass="AlbumCardItemView">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_card_city.png" translatesAutoresizingMaskIntoConstraints="NO" id="H3E-3k-Hey">
+                        <rect key="frame" x="4" y="4" width="265" height="337"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4a-k4-R5W" userLabel="Card View1">
+                        <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uJ-PX-Pks" userLabel="Card View2">
+                        <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJX-r6-9vH" userLabel="Card View3">
+                        <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-oB-qmj" userLabel="Card View4">
+                        <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-bK-Ros" userLabel="Card View5">
+                        <rect key="frame" x="0.0" y="0.0" width="273" height="345"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="j4a-k4-R5W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="34h-FW-GO9"/>
+                <constraint firstAttribute="bottom" secondItem="JaR-oB-qmj" secondAttribute="bottom" id="7hb-dn-GeE"/>
+                <constraint firstAttribute="bottom" secondItem="j4a-k4-R5W" secondAttribute="bottom" id="Dxs-vs-AQF"/>
+                <constraint firstAttribute="trailing" secondItem="j4a-k4-R5W" secondAttribute="trailing" id="KyT-tJ-A3z"/>
+                <constraint firstAttribute="bottom" secondItem="H3E-3k-Hey" secondAttribute="bottom" constant="4" id="L3l-aP-OYn"/>
+                <constraint firstItem="j4a-k4-R5W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PAt-wj-V0d"/>
+                <constraint firstItem="H3E-3k-Hey" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="R7L-vy-bRl"/>
+                <constraint firstItem="JaR-oB-qmj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xvw-4s-fjt"/>
+                <constraint firstItem="0TN-bK-Ros" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a62-NB-eqx"/>
+                <constraint firstItem="QJX-r6-9vH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bx8-Cj-U3v"/>
+                <constraint firstAttribute="trailing" secondItem="0TN-bK-Ros" secondAttribute="trailing" id="cmh-1R-eXQ"/>
+                <constraint firstItem="0TN-bK-Ros" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ggf-pA-adJ"/>
+                <constraint firstItem="JaR-oB-qmj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="im3-gk-Sb9"/>
+                <constraint firstAttribute="trailing" secondItem="QJX-r6-9vH" secondAttribute="trailing" id="jpy-G7-jmM"/>
+                <constraint firstAttribute="bottom" secondItem="2uJ-PX-Pks" secondAttribute="bottom" id="lWS-Ac-ruC"/>
+                <constraint firstItem="2uJ-PX-Pks" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lmt-yA-bbO"/>
+                <constraint firstAttribute="trailing" secondItem="2uJ-PX-Pks" secondAttribute="trailing" id="nM1-2T-Ar0"/>
+                <constraint firstAttribute="bottom" secondItem="0TN-bK-Ros" secondAttribute="bottom" id="pn3-Gq-bvE"/>
+                <constraint firstItem="2uJ-PX-Pks" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rPS-Xo-92h"/>
+                <constraint firstItem="QJX-r6-9vH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tAa-sn-jnO"/>
+                <constraint firstAttribute="bottom" secondItem="QJX-r6-9vH" secondAttribute="bottom" id="tY7-5s-iyf"/>
+                <constraint firstAttribute="trailing" secondItem="JaR-oB-qmj" secondAttribute="trailing" id="taN-cp-oOf"/>
+                <constraint firstItem="H3E-3k-Hey" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="yqD-yB-L2K"/>
+                <constraint firstAttribute="trailing" secondItem="H3E-3k-Hey" secondAttribute="trailing" constant="4" id="zJx-8M-3gc"/>
+            </constraints>
+            <size key="customSize" width="275" height="344"/>
+            <connections>
+                <outlet property="cardImage" destination="H3E-3k-Hey" id="u8S-pL-1Vb"/>
+            </connections>
+            <point key="canvasLocation" x="448.5" y="263"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demo_card_city.png" width="187" height="238"/>
+    </resources>
+</document>

@@ -11,6 +11,8 @@
 #import "RDVTabBarItem.h"
 #import "XMLoginTool.h"
 
+#import "RecommendViewController.h"
+
 @interface RootTabViewController ()
 
 //@property(nonatomic,strong) TGLLoginView *loginView;
@@ -40,10 +42,10 @@
 
 
 -(void)setupViewControllers{
-    /*
+    
     RecommendViewController *vc_recommend=[[RecommendViewController alloc] init];
     XMNavigationViewController *nav_recommend=[[XMNavigationViewController alloc] initWithRootViewController:vc_recommend];
-    
+    /*
     TGLHomepageController *vc_home=[[TGLHomepageController alloc] initWithNibName:@"TGLHomepageController" bundle:nil];
     XMNavigationViewController *nav_home=[[XMNavigationViewController alloc] initWithRootViewController:vc_home];
     */
@@ -85,19 +87,20 @@
      */
 }
 -(void)customizeTabBarForController{
-    UIImage *backgroundImage=[UIImage imageWithColor:kXMColor(255, 255, 255, 0.85) withFrame:CGRectMake(0, 0, kScreen_Width, 50)];
-    NSArray *tabBarItemImages=@[@"tab_recommend",@"tab_find",@"tab_message",@"tab_me"];
-    NSArray *tabBarItemTitles = @[@"推荐", @"发现",@"消息", @"我的"];
+    UIImage *backgroundImage=[UIImage imageWithColor:XMUIColor(255, 255, 255, 0.85) withFrame:CGRectMake(0, 0, kScreen_Width, 50)];
+    NSArray *tabBarItemImages=@[@"tabbar_icon_homepage",@"tabbar_icon_Rss",@"tabbar_icon_find",@"tabbar_icon_my"];
+    NSArray *tabBarItemTitles = @[@"首页", @"订阅",@"发现", @"我的"];
     NSInteger index = 0;
     
     for (RDVTabBarItem *item in [[self tabBar] items]) {
         item.titlePositionAdjustment = UIOffsetMake(0, 3);
         [item setBackgroundSelectedImage:backgroundImage withUnselectedImage:backgroundImage];
-        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_sle",
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_pressed",
                                                       [tabBarItemImages objectAtIndex:index]]];//_selected
-        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_nor",
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
                                                         [tabBarItemImages objectAtIndex:index]]];//_normal
         [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        /*
         [item setTitle:[tabBarItemTitles objectAtIndex:index]];
         item.unselectedTitleAttributes = @{
                                            NSFontAttributeName: [UIFont fontWithName:@"PingFangSC-Regular" size:10],
@@ -107,6 +110,7 @@
                                            NSFontAttributeName: [UIFont fontWithName:@"PingFangSC-Regular" size:10],
                                            NSForegroundColorAttributeName: kXMColor(121, 121, 121, 1),
                                            };
+         */
         index++;
     }
 }
