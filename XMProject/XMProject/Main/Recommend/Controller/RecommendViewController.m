@@ -42,7 +42,7 @@
     //UIImageView *imageV=[[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //imageV.image=[UIImage imageNamed:@"recommend_bg"];
     //[self.view addSubview:imageV];
-    self.view.backgroundColor=XMUIColor(255, 255, 255, 1);
+    self.view.backgroundColor= XMUIColor(236, 236, 236, 1);
     
     [self initScrollView];
     [self initAlbmTitelView];
