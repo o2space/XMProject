@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XMProject' do
+  pod 'MJExtension'
+  pod 'ActionSheetPicker-3.0', '~> 2.2.0'
+end
+
+
+# 更新慢，你也值得拥有
+# pod install --verbose --no-repo-update
+# pod update --verbose --no-repo-update

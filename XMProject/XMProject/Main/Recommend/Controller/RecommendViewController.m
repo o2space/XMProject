@@ -26,11 +26,29 @@
 
 @implementation RecommendViewController
 
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.automaticallyAdjustsScrollViewInsets=NO;
-    self.navigationController.navigationBarHidden = YES;
+    //self.automaticallyAdjustsScrollViewInsets=NO;
+    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBar.translucent = YES;
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    
+    UIImageView *navBarHairlineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
+    navBarHairlineImageView.hidden = YES;
     
     self.albumCardData=[NSMutableArray array];
     [self.albumCardData addObjectsFromArray:@[@"demo_card_city",@"demo_card_goods",@"demo_card_persongroup",@"demo_card_themes",@"demo_card_person"]];
@@ -51,13 +69,32 @@
     [self initRecruitCardCollectView];
     //NSLog(@"Screen Width:%f,Screen Height:%f",kScreen_Width,kScreen_Height);
     //NSLog(@"View Width:%f,View Height:%f",self.view.width,self.view.height);
+    
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 80, kScreen_Width, 80)];
+    toolbar.translucent = YES;
+    toolbar.clipsToBounds = YES;
+    //UIImageView *toolbarHairlineImageView = [self findHairlineImageViewUnder:toolbar];
+    //toolbarHairlineImageView.hidden = YES;
+    
+    //[toolbar setBackgroundImage:[UIImage new] forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    //[toolbar setShadowImage:[UIImage new] forToolbarPosition:UIBarPositionAny];
+    
+    [self.view addSubview:toolbar];
+    
+    
+    /*
+    UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
+    effectView.backgroundColor = XMUIColor(255, 255, 255, 0.5);
+    effectView.frame = CGRectMake(0, 142, kScreen_Width, 80);
+    [self.view addSubview:effectView];
+     */
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.delegate=self;
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    self.navigationController.navigationBarHidden = YES;
+    //self.navigationController.navigationBarHidden = YES;
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];

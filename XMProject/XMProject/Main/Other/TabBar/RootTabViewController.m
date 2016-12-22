@@ -90,7 +90,12 @@
      
 }
 -(void)customizeTabBarForController{
-    UIImage *backgroundImage=[UIImage imageWithColor:XMUIColor(255, 255, 255, 0.85) withFrame:CGRectMake(0, 0, kScreen_Width, 50)];
+    UIImage *backgroundImage=[UIImage imageWithColor:XMUIColor(255, 255, 255, 1.0) withFrame:CGRectMake(0, 0, kScreen_Width, 50)];
+    
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, -7, kScreen_Width, 8)];
+    iv.image = [UIImage imageNamed:@"tabbar_split_Image"];
+    iv.contentMode = UIViewContentModeScaleAspectFill;
+    [self.tabBar addSubview:iv];
     NSArray *tabBarItemImages=@[@"tabbar_icon_homepage",@"tabbar_icon_Rss",@"tabbar_icon_find",@"tabbar_icon_my"];
     NSArray *tabBarItemTitles = @[@"首页", @"订阅",@"发现", @"我的"];
     NSInteger index = 0;
@@ -150,6 +155,7 @@
      */
     return YES;
 }
+
 /*
 #pragma mark - Navigation
 

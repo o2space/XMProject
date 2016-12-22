@@ -33,7 +33,8 @@
     }
      */
     //appearance.barStyle=UIBarStyleBlackTranslucent;
-    appearance.translucent=NO;
+    appearance.translucent=YES;
+    appearance.shadowImage = [UIImage new];
     
     NSMutableDictionary *textAttrs=[NSMutableDictionary dictionary];
     //设置字体颜色
@@ -142,4 +143,8 @@
 {
     [self popToRootViewControllerAnimated:YES];
 }
+
+
+
+
 @end

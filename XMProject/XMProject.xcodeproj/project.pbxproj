@@ -17,6 +17,7 @@
 		161ABC841E02DF68004C7C6E /* CityHeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */; };
 		161ABC881E02E166004C7C6E /* RssRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC861E02E166004C7C6E /* RssRootController.m */; };
 		161ABC891E02E166004C7C6E /* RssRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC871E02E166004C7C6E /* RssRootController.xib */; };
+		165E0AB21E0B86EB00474F96 /* XMFindRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */; };
 		16612C9E1E0386DA00B21FEE /* demo_20160508.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C5E1E0386DA00B21FEE /* demo_20160508.png */; };
 		16612C9F1E0386DA00B21FEE /* demo_card_city.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C5F1E0386DA00B21FEE /* demo_card_city.png */; };
 		16612CA01E0386DA00B21FEE /* demo_card_city@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C601E0386DA00B21FEE /* demo_card_city@2x.png */; };
@@ -81,6 +82,12 @@
 		16612CDB1E0386DA00B21FEE /* dome_card_persongroup.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C9B1E0386DA00B21FEE /* dome_card_persongroup.png */; };
 		16612CDC1E0386DA00B21FEE /* dome_card_persongroup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C9C1E0386DA00B21FEE /* dome_card_persongroup@2x.png */; };
 		16612CDD1E0386DA00B21FEE /* dome_card_persongroup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C9D1E0386DA00B21FEE /* dome_card_persongroup@3x.png */; };
+		166351721E0A805A000E4711 /* XMFindRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166351701E0A805A000E4711 /* XMFindRootController.m */; };
+		166351731E0A805A000E4711 /* XMFindRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166351711E0A805A000E4711 /* XMFindRootController.xib */; };
+		166351761E0A827B000E4711 /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 166351751E0A827B000E4711 /* UITableView+Common.m */; };
+		166351791E0A87DE000E4711 /* XMTitleValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166351781E0A87DE000E4711 /* XMTitleValueCell.m */; };
+		1663517C1E0A880E000E4711 /* XMTitleValueMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663517B1E0A880E000E4711 /* XMTitleValueMoreCell.m */; };
+		1663517F1E0A94A7000E4711 /* XMImageTitleValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663517E1E0A94A7000E4711 /* XMImageTitleValueCell.m */; };
 		16690D391DFEA9B30053A30B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D381DFEA9B30053A30B /* main.m */; };
 		16690D3C1DFEA9B30053A30B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D3B1DFEA9B30053A30B /* AppDelegate.m */; };
 		16690D3F1DFEA9B30053A30B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D3E1DFEA9B30053A30B /* ViewController.m */; };
@@ -147,6 +154,7 @@
 		1677891F1E02C44600CC80B4 /* XMRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */; };
 		167789201E02C44600CC80B4 /* XMRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */; };
 		167789251E02CB9800CC80B4 /* PushAlbumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */; };
+		DD38F210DE6745DE50A9E2EE /* Pods_XMProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +175,8 @@
 		161ABC851E02E166004C7C6E /* RssRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssRootController.h; sourceTree = "<group>"; };
 		161ABC861E02E166004C7C6E /* RssRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssRootController.m; sourceTree = "<group>"; };
 		161ABC871E02E166004C7C6E /* RssRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RssRootController.xib; sourceTree = "<group>"; };
+		165E0AB01E0B86EB00474F96 /* XMFindRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFindRootModel.h; sourceTree = "<group>"; };
+		165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFindRootModel.m; sourceTree = "<group>"; };
 		16612C5E1E0386DA00B21FEE /* demo_20160508.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_20160508.png; sourceTree = "<group>"; };
 		16612C5F1E0386DA00B21FEE /* demo_card_city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_card_city.png; sourceTree = "<group>"; };
 		16612C601E0386DA00B21FEE /* demo_card_city@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo_card_city@2x.png"; sourceTree = "<group>"; };
@@ -231,6 +241,17 @@
 		16612C9B1E0386DA00B21FEE /* dome_card_persongroup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dome_card_persongroup.png; sourceTree = "<group>"; };
 		16612C9C1E0386DA00B21FEE /* dome_card_persongroup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dome_card_persongroup@2x.png"; sourceTree = "<group>"; };
 		16612C9D1E0386DA00B21FEE /* dome_card_persongroup@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dome_card_persongroup@3x.png"; sourceTree = "<group>"; };
+		1663516F1E0A805A000E4711 /* XMFindRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFindRootController.h; sourceTree = "<group>"; };
+		166351701E0A805A000E4711 /* XMFindRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFindRootController.m; sourceTree = "<group>"; };
+		166351711E0A805A000E4711 /* XMFindRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMFindRootController.xib; sourceTree = "<group>"; };
+		166351741E0A827B000E4711 /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
+		166351751E0A827B000E4711 /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
+		166351771E0A87DE000E4711 /* XMTitleValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTitleValueCell.h; sourceTree = "<group>"; };
+		166351781E0A87DE000E4711 /* XMTitleValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTitleValueCell.m; sourceTree = "<group>"; };
+		1663517A1E0A880E000E4711 /* XMTitleValueMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTitleValueMoreCell.h; sourceTree = "<group>"; };
+		1663517B1E0A880E000E4711 /* XMTitleValueMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTitleValueMoreCell.m; sourceTree = "<group>"; };
+		1663517D1E0A94A7000E4711 /* XMImageTitleValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMImageTitleValueCell.h; sourceTree = "<group>"; };
+		1663517E1E0A94A7000E4711 /* XMImageTitleValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMImageTitleValueCell.m; sourceTree = "<group>"; };
 		16690D341DFEA9B30053A30B /* XMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16690D381DFEA9B30053A30B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16690D3A1DFEA9B30053A30B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -349,6 +370,10 @@
 		167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshFooterView.swift; sourceTree = "<group>"; };
 		167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshHeaderView.swift; sourceTree = "<group>"; };
 		167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAlbumCollectionCell.xib; sourceTree = "<group>"; };
+		1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6643E1F260830F8F184CCAC7 /* Pods-XMProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8FA5FFCE3D3D5ED07F2F5BD4 /* Pods-XMProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.release.xcconfig"; sourceTree = "<group>"; };
+		BE576CD996E6977C8B5AFCAF /* Pods-XMProject.forbeta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.forbeta.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.forbeta.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +381,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD38F210DE6745DE50A9E2EE /* Pods_XMProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +399,9 @@
 				161ABC721E02DF68004C7C6E /* FindRootController.m */,
 				161ABC731E02DF68004C7C6E /* SquareRootController.h */,
 				161ABC741E02DF68004C7C6E /* SquareRootController.m */,
+				1663516F1E0A805A000E4711 /* XMFindRootController.h */,
+				166351701E0A805A000E4711 /* XMFindRootController.m */,
+				166351711E0A805A000E4711 /* XMFindRootController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +424,15 @@
 				161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		165E0AAF1E0B866400474F96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				165E0AB01E0B86EB00474F96 /* XMFindRootModel.h */,
+				165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		16612C5D1E0386DA00B21FEE /* Demo */ = {
@@ -473,6 +511,8 @@
 			children = (
 				16690D361DFEA9B30053A30B /* XMProject */,
 				16690D351DFEA9B30053A30B /* Products */,
+				E1C9D3871A91454C9E862AD6 /* Pods */,
+				7E514BB66F5D283574F5D704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -598,6 +638,8 @@
 				16690DA11DFEC25A0053A30B /* UIBadgeView.m */,
 				16690D9D1DFEC1B60053A30B /* UIView+Extension.h */,
 				16690D9E1DFEC1B60053A30B /* UIView+Extension.m */,
+				166351741E0A827B000E4711 /* UITableView+Common.h */,
+				166351751E0A827B000E4711 /* UITableView+Common.m */,
 			);
 			name = "Category(分类)";
 			path = Category;
@@ -701,6 +743,12 @@
 		16690D6C1DFEB1980053A30B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				166351771E0A87DE000E4711 /* XMTitleValueCell.h */,
+				166351781E0A87DE000E4711 /* XMTitleValueCell.m */,
+				1663517A1E0A880E000E4711 /* XMTitleValueMoreCell.h */,
+				1663517B1E0A880E000E4711 /* XMTitleValueMoreCell.m */,
+				1663517D1E0A94A7000E4711 /* XMImageTitleValueCell.h */,
+				1663517E1E0A94A7000E4711 /* XMImageTitleValueCell.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -777,6 +825,7 @@
 		1677884A1E02BC4400CC80B4 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				165E0AAF1E0B866400474F96 /* Model */,
 				161ABC6C1E02DF68004C7C6E /* Controller */,
 				161ABC751E02DF68004C7C6E /* NYSegmentedControl */,
 				161ABC761E02DF68004C7C6E /* View */,
@@ -953,6 +1002,24 @@
 			path = XMRefresh;
 			sourceTree = "<group>";
 		};
+		7E514BB66F5D283574F5D704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1C9D3871A91454C9E862AD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6643E1F260830F8F184CCAC7 /* Pods-XMProject.debug.xcconfig */,
+				BE576CD996E6977C8B5AFCAF /* Pods-XMProject.forbeta.xcconfig */,
+				8FA5FFCE3D3D5ED07F2F5BD4 /* Pods-XMProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -960,9 +1027,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16690D4E1DFEA9B30053A30B /* Build configuration list for PBXNativeTarget "XMProject" */;
 			buildPhases = (
+				B4E05AC0044759273E5D8CE0 /* [CP] Check Pods Manifest.lock */,
 				16690D301DFEA9B30053A30B /* Sources */,
 				16690D311DFEA9B30053A30B /* Frameworks */,
 				16690D321DFEA9B30053A30B /* Resources */,
+				8432A85F8E19CC25747F5C70 /* [CP] Embed Pods Frameworks */,
+				89565087AF4EB994797821AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1062,6 +1132,7 @@
 				16612CAD1E0386DA00B21FEE /* demo_catch_icon.png in Resources */,
 				16612CA41E0386DA00B21FEE /* demo_card_goods@3x.png in Resources */,
 				16690D471DFEA9B30053A30B /* Assets.xcassets in Resources */,
+				166351731E0A805A000E4711 /* XMFindRootController.xib in Resources */,
 				16612CD01E0386DA00B21FEE /* demo_servicephoto.png in Resources */,
 				16612CB61E0386DA00B21FEE /* demo_photo_100.png in Resources */,
 				16690D421DFEA9B30053A30B /* Main.storyboard in Resources */,
@@ -1095,6 +1166,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8432A85F8E19CC25747F5C70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMProject/Pods-XMProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89565087AF4EB994797821AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMProject/Pods-XMProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E05AC0044759273E5D8CE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16690D301DFEA9B30053A30B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1105,6 +1224,7 @@
 				167788E81E02C16B00CC80B4 /* MJRefreshNormalHeader.m in Sources */,
 				167788861E02BCCD00CC80B4 /* RecommendViewController.m in Sources */,
 				167788E61E02C16B00CC80B4 /* MJRefreshBackStateFooter.m in Sources */,
+				166351791E0A87DE000E4711 /* XMTitleValueCell.m in Sources */,
 				1677891C1E02C44600CC80B4 /* UIView+XM.swift in Sources */,
 				1677888C1E02BCCD00CC80B4 /* AlbumCardMoreCell.m in Sources */,
 				16690D3F1DFEA9B30053A30B /* ViewController.m in Sources */,
@@ -1114,6 +1234,7 @@
 				167788E51E02C16B00CC80B4 /* MJRefreshBackNormalFooter.m in Sources */,
 				16690D901DFEB5360053A30B /* XMLoginTool.m in Sources */,
 				16690D661DFEACE00053A30B /* XMNetworkManager.m in Sources */,
+				165E0AB21E0B86EB00474F96 /* XMFindRootModel.m in Sources */,
 				161ABC801E02DF68004C7C6E /* SquareRootController.m in Sources */,
 				167788DF1E02C16B00CC80B4 /* MJRefreshFooter.m in Sources */,
 				161ABC831E02DF68004C7C6E /* CityHeadCollectionReusableView.m in Sources */,
@@ -1131,13 +1252,16 @@
 				16690D9F1DFEC1B60053A30B /* UIView+Extension.m in Sources */,
 				16690D7F1DFEB2F80053A30B /* RKSwipeBetweenViewControllers.m in Sources */,
 				167788A41E02BEC600CC80B4 /* RootViewController.m in Sources */,
+				166351721E0A805A000E4711 /* XMFindRootController.m in Sources */,
 				16690D891DFEB4370053A30B /* XMNavigationViewController.m in Sources */,
 				167788E41E02C16B00CC80B4 /* MJRefreshBackGifFooter.m in Sources */,
 				16690D7E1DFEB2F80053A30B /* EasePageViewController.m in Sources */,
 				167788E11E02C16B00CC80B4 /* MJRefreshAutoGifFooter.m in Sources */,
+				1663517C1E0A880E000E4711 /* XMTitleValueMoreCell.m in Sources */,
 				167788E71E02C16B00CC80B4 /* MJRefreshGifHeader.m in Sources */,
 				167788DE1E02C16B00CC80B4 /* MJRefreshComponent.m in Sources */,
 				16690D641DFEACE00053A30B /* NetResponse.m in Sources */,
+				1663517F1E0A94A7000E4711 /* XMImageTitleValueCell.m in Sources */,
 				16690D8D1DFEB4F10053A30B /* XMControllerTool.m in Sources */,
 				167788EC1E02C16B00CC80B4 /* UIScrollView+MJExtension.m in Sources */,
 				161ABC881E02E166004C7C6E /* RssRootController.m in Sources */,
@@ -1153,6 +1277,7 @@
 				16690D3C1DFEA9B30053A30B /* AppDelegate.m in Sources */,
 				16690DA21DFEC25A0053A30B /* UIBadgeView.m in Sources */,
 				167788ED1E02C16B00CC80B4 /* UIScrollView+MJRefresh.m in Sources */,
+				166351761E0A827B000E4711 /* UITableView+Common.m in Sources */,
 				16690D451DFEA9B30053A30B /* XMProject.xcdatamodeld in Sources */,
 				16690D7B1DFEB2F80053A30B /* RDVTabBar.m in Sources */,
 				1677891A1E02C44600CC80B4 /* UILabel+XM.swift in Sources */,
@@ -1239,6 +1364,7 @@
 		};
 		16612CDF1E039A4200B21FEE /* ForBeta */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE576CD996E6977C8B5AFCAF /* Pods-XMProject.forbeta.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_ENABLE_MODULES = YES;
@@ -1346,6 +1472,7 @@
 		};
 		16690D4F1DFEA9B30053A30B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6643E1F260830F8F184CCAC7 /* Pods-XMProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
 				CLANG_ENABLE_MODULES = YES;
@@ -1365,6 +1492,7 @@
 		};
 		16690D501DFEA9B30053A30B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA5FFCE3D3D5ED07F2F5BD4 /* Pods-XMProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
