@@ -17,6 +17,7 @@
 #import "DestRootController.h"
 #import "DynamicRootController.h"
 #import "SquareRootController.h"
+#import "XMFindRootController.h"
 
 @interface RootTabViewController ()
 
@@ -64,8 +65,8 @@
     nav_find.pageUnselected=@[@"nav_page_unselected",@"nav_page_unselected",@"nav_page_unselected"];
     
 
-    RssRootController *vc_rss2=[[RssRootController alloc] init];
-    XMNavigationViewController *nav_rss2=[[XMNavigationViewController alloc] initWithRootViewController:vc_rss2];
+    XMFindRootController *vc_xfind=[[XMFindRootController alloc] init];
+    XMNavigationViewController *nav_xfind=[[XMNavigationViewController alloc] initWithRootViewController:vc_xfind];
     
     /*
     DiscoverRootController *vc_discover=[[DiscoverRootController alloc] initWithNibName:@"DiscoverRootController" bundle:nil];
@@ -83,7 +84,7 @@
     XMNavigationViewController *nav_me;
     nav_me = [[XMNavigationViewController alloc] initWithRootViewController:vc_mephotog];
     */
-    [self setViewControllers:@[nav_recommend,nav_rss,nav_find,nav_rss2]];
+    [self setViewControllers:@[nav_recommend,nav_rss,nav_find,nav_xfind]];
     [self customizeTabBarForController];
     self.delegate=self;
     self.selectedIndex = 0;

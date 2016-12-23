@@ -36,7 +36,8 @@
             return imageView;
         }
     }
-    return nil;}
+    return nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,7 +46,7 @@
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.translucent = YES;
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    //self.navigationController.navigationBar.shadowImage = [UIImage new];
     
     UIImageView *navBarHairlineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
     navBarHairlineImageView.hidden = YES;

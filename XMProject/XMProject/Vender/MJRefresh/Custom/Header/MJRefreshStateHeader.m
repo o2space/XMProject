@@ -133,7 +133,6 @@
             self.stateLabel.mj_w = self.mj_w;
             self.stateLabel.mj_h = stateLabelH;
         }
-        
         // 更新时间
         if (self.lastUpdatedTimeLabel.constraints.count == 0) {
             self.lastUpdatedTimeLabel.mj_x = 0;
@@ -142,6 +141,7 @@
             self.lastUpdatedTimeLabel.mj_h = self.mj_h - self.lastUpdatedTimeLabel.mj_y;
         }
     }
+    NSLog(@"stateLabel:%lf",self.stateLabel.mj_w);
 }
 
 - (void)setState:(MJRefreshState)state

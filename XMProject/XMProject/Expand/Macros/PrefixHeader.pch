@@ -13,7 +13,11 @@
 #import "UIView+Extension.h"
 #import "UIImage+Extension.h"
 #import "NSString+Extension.h"
+#import "UITableView+Common.h"
 
 #import "XMProject-Swift.h"
+
+//第三方
+#import <MJExtension/MJExtension.h>
 
 #endif /* PrefixHeader_pch */

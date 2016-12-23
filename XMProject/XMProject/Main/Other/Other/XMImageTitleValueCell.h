@@ -13,4 +13,6 @@
 + (CGFloat)cellHeight;
 + (NSString *)getID;
 
+- (void)updateTitleImg:(NSString *)titImg TitleLbl:(NSString *)titLabl ValueImg:(NSString *)valueImg ValueLbl:(NSString *)valueLbl;
+
 @end

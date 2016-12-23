@@ -7,6 +7,7 @@
 //
 
 #import "XMImageTitleValueCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface XMImageTitleValueCell()
 
@@ -24,6 +25,7 @@
         // Initialization code
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         self.backgroundColor = [UIColor whiteColor];
+        self.contentView.backgroundColor = [UIColor clearColor];
         if (!_titleLabel) {
             _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 0, 100, 50)];
             _titleLabel.backgroundColor = [UIColor clearColor];
@@ -32,7 +34,7 @@
             [self.contentView addSubview:_titleLabel];
         }
         if (!_valueLabel) {
-            _valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(160, 0, kScreen_Width-160 - 50, 50)];
+            _valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 0, kScreen_Width - 80 - 25 - 35 - 10, 50)];
             _valueLabel.backgroundColor = [UIColor clearColor];
             _valueLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
             _valueLabel.textColor = XMUIColor(62, 62, 62, 0.5);
@@ -40,17 +42,29 @@
             [self.contentView addSubview:_valueLabel];
         }
         if (!_titleImage) {
-            _titleImage = [[UIImageView alloc] initWithFrame:CGRectMake(8, 0, 50, 50)];
-            _titleImage.contentMode = UIViewContentModeCenter;
+            _titleImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 0, 25, 50)];
+            _titleImage.contentMode = UIViewContentModeScaleAspectFit;
             [self.contentView addSubview:_titleImage];
         }
         if (!_valueImage) {
-            _valueImage = [[UIImageView alloc] initWithFrame:CGRectMake(kScreen_Width - 50 -10, 0, 50, 50)];
-            _valueImage.contentMode = UIViewContentModeCenter;
+            _valueImage = [[UIImageView alloc] initWithFrame:CGRectMake(kScreen_Width - 25 - 35, 0, 25, 50)];
+            _valueImage.contentMode = UIViewContentModeScaleAspectFit;
             [self.contentView addSubview:_valueImage];
         }
     }
     return self;
+}
+
+- (void)updateTitleImg:(NSString *)titImg TitleLbl:(NSString *)titLabl ValueImg:(NSString *)valueImg ValueLbl:(NSString *)valueLbl{
+    self.titleLabel.text = titLabl;
+    self.valueLabel.text = valueLbl;
+    [self.titleImage sd_setImageWithURL:[NSURL URLWithString:titImg] placeholderImage:[UIImage imageNamed:@""]];
+    if (valueImg != nil && ![valueImg isEqualToString:@""]) {
+        [self.valueImage sd_setImageWithURL:[NSURL URLWithString:valueImg] placeholderImage:[UIImage imageNamed:@""]];
+        self.valueLabel.width = kScreen_Width - 80 - 25 - 35 - 10;
+    }else{
+        self.valueLabel.width = kScreen_Width - 80 - 35;
+    }
 }
 
 - (void)layoutSubviews{

@@ -154,6 +154,10 @@
 		1677891F1E02C44600CC80B4 /* XMRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */; };
 		167789201E02C44600CC80B4 /* XMRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */; };
 		167789251E02CB9800CC80B4 /* PushAlbumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */; };
+		1688EF631E0CD8BB00345771 /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF621E0CD8BB00345771 /* NetworkTools.m */; };
+		1688EF671E0CE97F00345771 /* XMFindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF661E0CE97F00345771 /* XMFindViewModel.m */; };
+		1688EF6B1E0D123200345771 /* MJRefresCatHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF6A1E0D123200345771 /* MJRefresCatHeader.m */; };
+		1688EF6E1E0D126F00345771 /* CatPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF6D1E0D126F00345771 /* CatPullView.m */; };
 		DD38F210DE6745DE50A9E2EE /* Pods_XMProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -370,6 +374,14 @@
 		167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshFooterView.swift; sourceTree = "<group>"; };
 		167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshHeaderView.swift; sourceTree = "<group>"; };
 		167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAlbumCollectionCell.xib; sourceTree = "<group>"; };
+		1688EF611E0CD8BB00345771 /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
+		1688EF621E0CD8BB00345771 /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
+		1688EF651E0CE97F00345771 /* XMFindViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFindViewModel.h; sourceTree = "<group>"; };
+		1688EF661E0CE97F00345771 /* XMFindViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFindViewModel.m; sourceTree = "<group>"; };
+		1688EF691E0D123200345771 /* MJRefresCatHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresCatHeader.h; sourceTree = "<group>"; };
+		1688EF6A1E0D123200345771 /* MJRefresCatHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefresCatHeader.m; sourceTree = "<group>"; };
+		1688EF6C1E0D126F00345771 /* CatPullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPullView.h; sourceTree = "<group>"; };
+		1688EF6D1E0D126F00345771 /* CatPullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPullView.m; sourceTree = "<group>"; };
 		1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6643E1F260830F8F184CCAC7 /* Pods-XMProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA5FFCE3D3D5ED07F2F5BD4 /* Pods-XMProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -548,6 +560,8 @@
 		16690D511DFEAB150053A30B /* Expand(拓展) */ = {
 			isa = PBXGroup;
 			children = (
+				1688EF681E0D11F800345771 /* CommonView(视图) */,
+				1688EF601E0CD87500345771 /* HTTPRequest(网络请求) */,
 				16690D5C1DFEAC1E0053A30B /* NetWork(网络) */,
 				16690D581DFEAC1E0053A30B /* Category(分类) */,
 				16690D591DFEAC1E0053A30B /* Const(常量) */,
@@ -825,6 +839,7 @@
 		1677884A1E02BC4400CC80B4 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				1688EF641E0CE43800345771 /* ViewModel */,
 				165E0AAF1E0B866400474F96 /* Model */,
 				161ABC6C1E02DF68004C7C6E /* Controller */,
 				161ABC751E02DF68004C7C6E /* NYSegmentedControl */,
@@ -1000,6 +1015,37 @@
 				167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */,
 			);
 			path = XMRefresh;
+			sourceTree = "<group>";
+		};
+		1688EF601E0CD87500345771 /* HTTPRequest(网络请求) */ = {
+			isa = PBXGroup;
+			children = (
+				1688EF611E0CD8BB00345771 /* NetworkTools.h */,
+				1688EF621E0CD8BB00345771 /* NetworkTools.m */,
+			);
+			name = "HTTPRequest(网络请求)";
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		1688EF641E0CE43800345771 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1688EF651E0CE97F00345771 /* XMFindViewModel.h */,
+				1688EF661E0CE97F00345771 /* XMFindViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1688EF681E0D11F800345771 /* CommonView(视图) */ = {
+			isa = PBXGroup;
+			children = (
+				1688EF6C1E0D126F00345771 /* CatPullView.h */,
+				1688EF6D1E0D126F00345771 /* CatPullView.m */,
+				1688EF691E0D123200345771 /* MJRefresCatHeader.h */,
+				1688EF6A1E0D123200345771 /* MJRefresCatHeader.m */,
+			);
+			name = "CommonView(视图)";
+			path = CommonView;
 			sourceTree = "<group>";
 		};
 		7E514BB66F5D283574F5D704 /* Frameworks */ = {
@@ -1233,6 +1279,7 @@
 				1677891F1E02C44600CC80B4 /* XMRefreshFooterView.swift in Sources */,
 				167788E51E02C16B00CC80B4 /* MJRefreshBackNormalFooter.m in Sources */,
 				16690D901DFEB5360053A30B /* XMLoginTool.m in Sources */,
+				1688EF6E1E0D126F00345771 /* CatPullView.m in Sources */,
 				16690D661DFEACE00053A30B /* XMNetworkManager.m in Sources */,
 				165E0AB21E0B86EB00474F96 /* XMFindRootModel.m in Sources */,
 				161ABC801E02DF68004C7C6E /* SquareRootController.m in Sources */,
@@ -1248,6 +1295,7 @@
 				16690DA91DFEC5FB0053A30B /* NSString+Extension.m in Sources */,
 				16690D651DFEACE00053A30B /* XMEncryptTool.m in Sources */,
 				167788891E02BCCD00CC80B4 /* AlbumCardFlowLayout.m in Sources */,
+				1688EF6B1E0D123200345771 /* MJRefresCatHeader.m in Sources */,
 				167788E21E02C16B00CC80B4 /* MJRefreshAutoNormalFooter.m in Sources */,
 				16690D9F1DFEC1B60053A30B /* UIView+Extension.m in Sources */,
 				16690D7F1DFEB2F80053A30B /* RKSwipeBetweenViewControllers.m in Sources */,
@@ -1257,6 +1305,7 @@
 				167788E41E02C16B00CC80B4 /* MJRefreshBackGifFooter.m in Sources */,
 				16690D7E1DFEB2F80053A30B /* EasePageViewController.m in Sources */,
 				167788E11E02C16B00CC80B4 /* MJRefreshAutoGifFooter.m in Sources */,
+				1688EF671E0CE97F00345771 /* XMFindViewModel.m in Sources */,
 				1663517C1E0A880E000E4711 /* XMTitleValueMoreCell.m in Sources */,
 				167788E71E02C16B00CC80B4 /* MJRefreshGifHeader.m in Sources */,
 				167788DE1E02C16B00CC80B4 /* MJRefreshComponent.m in Sources */,
@@ -1284,6 +1333,7 @@
 				161ABC811E02DF68004C7C6E /* CityCollectionViewCell.m in Sources */,
 				167788E31E02C16B00CC80B4 /* MJRefreshAutoStateFooter.m in Sources */,
 				167788DC1E02C16B00CC80B4 /* MJRefreshAutoFooter.m in Sources */,
+				1688EF631E0CD8BB00345771 /* NetworkTools.m in Sources */,
 				161ABC7F1E02DF68004C7C6E /* FindRootController.m in Sources */,
 				167788901E02BCCD00CC80B4 /* ChoiceCardItemView.m in Sources */,
 				16690D391DFEA9B30053A30B /* main.m in Sources */,
