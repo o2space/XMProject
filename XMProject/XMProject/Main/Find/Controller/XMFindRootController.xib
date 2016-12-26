@@ -28,10 +28,11 @@
             <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="qoo-dG-ZZA" secondAttribute="trailing" id="6YG-pw-DUH"/>
-                <constraint firstItem="qoo-dG-ZZA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Pal-EW-kHZ"/>
+                <constraint firstItem="qoo-dG-ZZA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pal-EW-kHZ"/>
                 <constraint firstAttribute="bottom" secondItem="qoo-dG-ZZA" secondAttribute="bottom" id="ev7-xP-z4C"/>
                 <constraint firstItem="qoo-dG-ZZA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jHU-wO-udr"/>
             </constraints>
+            <point key="canvasLocation" x="32.5" y="103.5"/>
         </view>
     </objects>
 </document>

@@ -15,8 +15,8 @@
 		161ABC821E02DF68004C7C6E /* CityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC791E02DF68004C7C6E /* CityCollectionViewCell.xib */; };
 		161ABC831E02DF68004C7C6E /* CityHeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC7B1E02DF68004C7C6E /* CityHeadCollectionReusableView.m */; };
 		161ABC841E02DF68004C7C6E /* CityHeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */; };
-		161ABC881E02E166004C7C6E /* RssRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC861E02E166004C7C6E /* RssRootController.m */; };
-		161ABC891E02E166004C7C6E /* RssRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC871E02E166004C7C6E /* RssRootController.xib */; };
+		161ABC881E02E166004C7C6E /* XMRssRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC861E02E166004C7C6E /* XMRssRootController.m */; };
+		161ABC891E02E166004C7C6E /* XMRssRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC871E02E166004C7C6E /* XMRssRootController.xib */; };
 		165E0AB21E0B86EB00474F96 /* XMFindRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */; };
 		16612C9E1E0386DA00B21FEE /* demo_20160508.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C5E1E0386DA00B21FEE /* demo_20160508.png */; };
 		16612C9F1E0386DA00B21FEE /* demo_card_city.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C5F1E0386DA00B21FEE /* demo_card_city.png */; };
@@ -154,10 +154,15 @@
 		1677891F1E02C44600CC80B4 /* XMRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */; };
 		167789201E02C44600CC80B4 /* XMRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */; };
 		167789251E02CB9800CC80B4 /* PushAlbumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */; };
+		1683527B1E0FB3B200B8A4E9 /* XMHomeRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */; };
+		1683527E1E0FB85600B8A4E9 /* XMSubHomeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683527D1E0FB85600B8A4E9 /* XMSubHomeFactory.m */; };
+		168352821E0FC04300B8A4E9 /* XMHomeSubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 168352811E0FC04300B8A4E9 /* XMHomeSubTitleView.m */; };
+		168352861E0FDFCC00B8A4E9 /* XMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168352851E0FDFCC00B8A4E9 /* XMPageViewController.m */; };
 		1688EF631E0CD8BB00345771 /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF621E0CD8BB00345771 /* NetworkTools.m */; };
 		1688EF671E0CE97F00345771 /* XMFindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF661E0CE97F00345771 /* XMFindViewModel.m */; };
 		1688EF6B1E0D123200345771 /* MJRefresCatHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF6A1E0D123200345771 /* MJRefresCatHeader.m */; };
 		1688EF6E1E0D126F00345771 /* CatPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF6D1E0D126F00345771 /* CatPullView.m */; };
+		1688EF711E0D2F6D00345771 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1688EF701E0D2F6D00345771 /* BaseViewController.m */; };
 		DD38F210DE6745DE50A9E2EE /* Pods_XMProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -176,9 +181,9 @@
 		161ABC7A1E02DF68004C7C6E /* CityHeadCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHeadCollectionReusableView.h; sourceTree = "<group>"; };
 		161ABC7B1E02DF68004C7C6E /* CityHeadCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHeadCollectionReusableView.m; sourceTree = "<group>"; };
 		161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityHeadCollectionReusableView.xib; sourceTree = "<group>"; };
-		161ABC851E02E166004C7C6E /* RssRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssRootController.h; sourceTree = "<group>"; };
-		161ABC861E02E166004C7C6E /* RssRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssRootController.m; sourceTree = "<group>"; };
-		161ABC871E02E166004C7C6E /* RssRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RssRootController.xib; sourceTree = "<group>"; };
+		161ABC851E02E166004C7C6E /* XMRssRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRssRootController.h; sourceTree = "<group>"; };
+		161ABC861E02E166004C7C6E /* XMRssRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRssRootController.m; sourceTree = "<group>"; };
+		161ABC871E02E166004C7C6E /* XMRssRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMRssRootController.xib; sourceTree = "<group>"; };
 		165E0AB01E0B86EB00474F96 /* XMFindRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFindRootModel.h; sourceTree = "<group>"; };
 		165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFindRootModel.m; sourceTree = "<group>"; };
 		16612C5E1E0386DA00B21FEE /* demo_20160508.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_20160508.png; sourceTree = "<group>"; };
@@ -374,6 +379,14 @@
 		167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshFooterView.swift; sourceTree = "<group>"; };
 		167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshHeaderView.swift; sourceTree = "<group>"; };
 		167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAlbumCollectionCell.xib; sourceTree = "<group>"; };
+		168352791E0FB3B200B8A4E9 /* XMHomeRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHomeRootController.h; sourceTree = "<group>"; };
+		1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHomeRootController.m; sourceTree = "<group>"; };
+		1683527C1E0FB85600B8A4E9 /* XMSubHomeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSubHomeFactory.h; sourceTree = "<group>"; };
+		1683527D1E0FB85600B8A4E9 /* XMSubHomeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSubHomeFactory.m; sourceTree = "<group>"; };
+		168352801E0FC04300B8A4E9 /* XMHomeSubTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHomeSubTitleView.h; sourceTree = "<group>"; };
+		168352811E0FC04300B8A4E9 /* XMHomeSubTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHomeSubTitleView.m; sourceTree = "<group>"; };
+		168352841E0FDFCC00B8A4E9 /* XMPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPageViewController.h; sourceTree = "<group>"; };
+		168352851E0FDFCC00B8A4E9 /* XMPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPageViewController.m; sourceTree = "<group>"; };
 		1688EF611E0CD8BB00345771 /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
 		1688EF621E0CD8BB00345771 /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
 		1688EF651E0CE97F00345771 /* XMFindViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFindViewModel.h; sourceTree = "<group>"; };
@@ -382,6 +395,8 @@
 		1688EF6A1E0D123200345771 /* MJRefresCatHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefresCatHeader.m; sourceTree = "<group>"; };
 		1688EF6C1E0D126F00345771 /* CatPullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPullView.h; sourceTree = "<group>"; };
 		1688EF6D1E0D126F00345771 /* CatPullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPullView.m; sourceTree = "<group>"; };
+		1688EF6F1E0D2F6D00345771 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1688EF701E0D2F6D00345771 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1C461B97F02CB702C7B69FF9 /* Pods_XMProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6643E1F260830F8F184CCAC7 /* Pods-XMProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA5FFCE3D3D5ED07F2F5BD4 /* Pods-XMProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMProject/Pods-XMProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -711,6 +726,11 @@
 		16690D671DFEB12D0053A30B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1683527F1E0FC00800B8A4E9 /* View */,
+				168352791E0FB3B200B8A4E9 /* XMHomeRootController.h */,
+				1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */,
+				1683527C1E0FB85600B8A4E9 /* XMSubHomeFactory.h */,
+				1683527D1E0FB85600B8A4E9 /* XMSubHomeFactory.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -725,6 +745,8 @@
 		16690D691DFEB1980053A30B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1688EF6F1E0D2F6D00345771 /* BaseViewController.h */,
+				1688EF701E0D2F6D00345771 /* BaseViewController.m */,
 				167788A21E02BEC600CC80B4 /* RootViewController.h */,
 				167788A31E02BEC600CC80B4 /* RootViewController.m */,
 				16690D991DFEC11A0053A30B /* Newfeature */,
@@ -763,6 +785,8 @@
 				1663517B1E0A880E000E4711 /* XMTitleValueMoreCell.m */,
 				1663517D1E0A94A7000E4711 /* XMImageTitleValueCell.h */,
 				1663517E1E0A94A7000E4711 /* XMImageTitleValueCell.m */,
+				168352841E0FDFCC00B8A4E9 /* XMPageViewController.h */,
+				168352851E0FDFCC00B8A4E9 /* XMPageViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -851,9 +875,9 @@
 		1677884B1E02BC4400CC80B4 /* Rss */ = {
 			isa = PBXGroup;
 			children = (
-				161ABC851E02E166004C7C6E /* RssRootController.h */,
-				161ABC861E02E166004C7C6E /* RssRootController.m */,
-				161ABC871E02E166004C7C6E /* RssRootController.xib */,
+				161ABC851E02E166004C7C6E /* XMRssRootController.h */,
+				161ABC861E02E166004C7C6E /* XMRssRootController.m */,
+				161ABC871E02E166004C7C6E /* XMRssRootController.xib */,
 			);
 			path = Rss;
 			sourceTree = "<group>";
@@ -1017,6 +1041,15 @@
 			path = XMRefresh;
 			sourceTree = "<group>";
 		};
+		1683527F1E0FC00800B8A4E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				168352801E0FC04300B8A4E9 /* XMHomeSubTitleView.h */,
+				168352811E0FC04300B8A4E9 /* XMHomeSubTitleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1688EF601E0CD87500345771 /* HTTPRequest(网络请求) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1144,7 +1177,7 @@
 				16690D4A1DFEA9B30053A30B /* LaunchScreen.storyboard in Resources */,
 				167789251E02CB9800CC80B4 /* PushAlbumCollectionCell.xib in Resources */,
 				16612CD11E0386DA00B21FEE /* demo_servicephoto@2x.png in Resources */,
-				161ABC891E02E166004C7C6E /* RssRootController.xib in Resources */,
+				161ABC891E02E166004C7C6E /* XMRssRootController.xib in Resources */,
 				16612CB91E0386DA00B21FEE /* demo_photo_101@2x.png in Resources */,
 				16612CAC1E0386DA00B21FEE /* demo_card_themes@3x.png in Resources */,
 				16612CB71E0386DA00B21FEE /* demo_photo_100@2x.png in Resources */,
@@ -1268,6 +1301,7 @@
 				16690D981DFEC0630053A30B /* SMPageControl.m in Sources */,
 				167789191E02C44600CC80B4 /* AppConfig.swift in Sources */,
 				167788E81E02C16B00CC80B4 /* MJRefreshNormalHeader.m in Sources */,
+				1683527B1E0FB3B200B8A4E9 /* XMHomeRootController.m in Sources */,
 				167788861E02BCCD00CC80B4 /* RecommendViewController.m in Sources */,
 				167788E61E02C16B00CC80B4 /* MJRefreshBackStateFooter.m in Sources */,
 				166351791E0A87DE000E4711 /* XMTitleValueCell.m in Sources */,
@@ -1313,10 +1347,11 @@
 				1663517F1E0A94A7000E4711 /* XMImageTitleValueCell.m in Sources */,
 				16690D8D1DFEB4F10053A30B /* XMControllerTool.m in Sources */,
 				167788EC1E02C16B00CC80B4 /* UIScrollView+MJExtension.m in Sources */,
-				161ABC881E02E166004C7C6E /* RssRootController.m in Sources */,
+				161ABC881E02E166004C7C6E /* XMRssRootController.m in Sources */,
 				167788A01E02BCCD00CC80B4 /* RecruitCardItemView.m in Sources */,
 				16690D7C1DFEB2F80053A30B /* RDVTabBarController.m in Sources */,
 				16690D851DFEB4300053A30B /* RootTabViewController.m in Sources */,
+				1683527E1E0FB85600B8A4E9 /* XMSubHomeFactory.m in Sources */,
 				167788DD1E02C16B00CC80B4 /* MJRefreshBackFooter.m in Sources */,
 				1677891E1E02C44600CC80B4 /* XMRefreshConst.swift in Sources */,
 				167788E91E02C16B00CC80B4 /* MJRefreshStateHeader.m in Sources */,
@@ -1325,6 +1360,8 @@
 				16690DA61DFEC4C10053A30B /* UIImage+Extension.m in Sources */,
 				16690D3C1DFEA9B30053A30B /* AppDelegate.m in Sources */,
 				16690DA21DFEC25A0053A30B /* UIBadgeView.m in Sources */,
+				168352861E0FDFCC00B8A4E9 /* XMPageViewController.m in Sources */,
+				168352821E0FC04300B8A4E9 /* XMHomeSubTitleView.m in Sources */,
 				167788ED1E02C16B00CC80B4 /* UIScrollView+MJRefresh.m in Sources */,
 				166351761E0A827B000E4711 /* UITableView+Common.m in Sources */,
 				16690D451DFEA9B30053A30B /* XMProject.xcdatamodeld in Sources */,
@@ -1334,6 +1371,7 @@
 				167788E31E02C16B00CC80B4 /* MJRefreshAutoStateFooter.m in Sources */,
 				167788DC1E02C16B00CC80B4 /* MJRefreshAutoFooter.m in Sources */,
 				1688EF631E0CD8BB00345771 /* NetworkTools.m in Sources */,
+				1688EF711E0D2F6D00345771 /* BaseViewController.m in Sources */,
 				161ABC7F1E02DF68004C7C6E /* FindRootController.m in Sources */,
 				167788901E02BCCD00CC80B4 /* ChoiceCardItemView.m in Sources */,
 				16690D391DFEA9B30053A30B /* main.m in Sources */,

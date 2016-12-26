@@ -27,5 +27,6 @@
 #define kBadgeTipStr @"badgeTip"
 
 #define XMUIColor(r, g, b ,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define XMUIColorHexInt(hexValue) XMUIColor(((CGFloat)((hexValue & 0xFF0000) >> 16)),((CGFloat)((hexValue & 0xFF00) >> 8)),((CGFloat)(hexValue & 0xFF)),1.0)
 
 #endif /* macros_h */

@@ -10,6 +10,11 @@
 #define PrefixHeader_pch
 
 #import "macros.h"
+
+#import "BaseViewController.h"
+#import "RootViewController.h"
+
+//扩展
 #import "UIView+Extension.h"
 #import "UIImage+Extension.h"
 #import "NSString+Extension.h"
@@ -19,5 +24,6 @@
 
 //第三方
 #import <MJExtension/MJExtension.h>
+#import "Masonry.h"
 
 #endif /* PrefixHeader_pch */

@@ -13,6 +13,8 @@
 
 @property(nonatomic,strong)CatPullView *catGif;
 
+@property(nonatomic,assign)MJRefreshState oldState;
+
 @end
 
 @implementation MJRefresCatHeader
@@ -31,7 +33,8 @@
 - (void)prepare
 {
     [super prepare];
-    
+    self.mj_h = MJRefreshHeaderHeight + 10;
+    self.automaticallyChangeAlpha = NO;
 }
 - (void)placeSubviews
 {
@@ -57,22 +60,34 @@
 
 - (void)setPullingPercent:(CGFloat)pullingPercent{
     [super setPullingPercent:pullingPercent];
-    
+    //NSLog(@"pullingPercent:%lf",pullingPercent);
+    if (pullingPercent<0.016) {
+        pullingPercent = 0;
+    }
     if (self.state == MJRefreshStateIdle) {
-        [self.catGif animationIdle:pullingPercent];
-        if (pullingPercent>0) {
+        if (pullingPercent>0 && self.oldState != MJRefreshStateRefreshing) {
             self.alpha = 1.0;
+            [self.catGif animationIdle:pullingPercent];
         }
+        if (pullingPercent == 0.0) {
+            self.alpha = 0.0;
+            self.oldState = MJRefreshStateIdle;
+            [self.catGif animationIdle:0];
+        }
+        
     }
 }
 
 - (void)setState:(MJRefreshState)state
 {
     MJRefreshCheckState
-    
+    self.oldState = oldState;
     if (state == MJRefreshStateIdle) {
-        [self.catGif animationIdle:0];
-        self.alpha = 0;
+        if (oldState == MJRefreshStateRefreshing) {
+            self.alpha = 0;
+            self.pullingPercent = 1;
+            [self.catGif animationIdle:1];
+        }
     }else if (state == MJRefreshStatePulling){
         [self.catGif animationPulling:1];
     }else if (state == MJRefreshStateWillRefresh){

@@ -22,26 +22,17 @@
 
 @implementation XMFindRootController
 
-- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
-    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
-        return (UIImageView *)view;
-    }
-    for (UIView *subview in view.subviews) {
-        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
-        if (imageView) {
-            return imageView;
-        }
-    }
-    return nil;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.navigationController.navigationBarHidden = NO;
-    self.navigationController.navigationBar.translucent = YES;
-    self.title = @"发现";
+    self.automaticallyAdjustsScrollViewInsets = YES;
+    [self setupNavBar];
     [self initMyTableView];
+    
+    NSLog(@"1--------Find view height:%lf",self.view.height);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"2--------Find view height:%lf",self.view.height);
+    });
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -49,13 +40,12 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.translucent = YES;
-    UIImageView *navBarHairlineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
-    navBarHairlineImageView.alpha = 0.5;
 }
 
 - (void)initMyTableView{
     _myTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     [_myTableView registerClass:[XMImageTitleValueCell class] forCellReuseIdentifier:[XMImageTitleValueCell getID]];
+    _myTableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, 10)];
     _myTableView.tableFooterView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, 10)];
     
     __weak typeof(self) weakSelf = self;
@@ -75,7 +65,28 @@
     [self.myTableView.mj_header beginRefreshing];
 }
 
+- (void)setupNavBar{
+    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBar.translucent = YES;
+    self.title = @"发现";
+    //leftBtn
+    [self addLeftButtonWithImageName:@"top_search_n" Target:self Action:@selector(searchBtnClick:)];
+    //rightBtn
+    UIButton *historyBtn = [self getNavBarButtonWithImageName:@"top_history_n" Target:self Action:@selector(historyBtnClick:)];
+    UIButton *downloadBtn = [self getNavBarButtonWithImageName:@"top_download_n" Target:self Action:@selector(downloadBtnClick:)];
+    [self addRightBarItemCustomButtons:@[downloadBtn,historyBtn]];
+}
 
+#pragma mark Click
+-(void)searchBtnClick:(id)sender{
+    NSLog(@"点击了搜索按钮");
+}
+-(void)historyBtnClick:(id)sender{
+    NSLog(@"点击了历史按钮");
+}
+-(void)downloadBtnClick:(id)sender{
+    NSLog(@"点击了下载按钮");
+}
 
 #pragma mark TableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

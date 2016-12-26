@@ -4,6 +4,7 @@ target 'XMProject' do
   pod 'MJExtension'
   pod 'ActionSheetPicker-3.0', '~> 2.2.0'
   pod 'SDWebImage','~>3.7.3'
+  pod 'Masonry', '~> 1.0.2'
 end
 
 # 更新慢，你也值得拥有

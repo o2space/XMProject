@@ -1,5 +1,5 @@
 //
-//  RssRootController.h
+//  XMRssRootController.h
 //  XMProject
 //
 //  Created by wukexiu on 16/12/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RssRootController : UIViewController
+@interface XMRssRootController : RootViewController
 
 @end

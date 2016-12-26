@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XMFindRootController : UIViewController
+@interface XMFindRootController : BaseViewController
 
 @end

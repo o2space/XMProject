@@ -1,5 +1,6 @@
 PODS:
   - ActionSheetPicker-3.0 (2.2.0)
+  - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
@@ -7,14 +8,16 @@ PODS:
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.2.0)
+  - Masonry (~> 1.0.2)
   - MJExtension
   - SDWebImage (~> 3.7.3)
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: dad9501d6018cea084fc6eb3dcdc12a40f98b241
+PODFILE CHECKSUM: e3e3487bf213d4799926ca0f4aff3ba69e8dc7fc
 
 COCOAPODS: 1.2.0.beta.1

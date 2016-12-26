@@ -12,12 +12,13 @@
 #import "XMLoginTool.h"
 
 #import "RecommendViewController.h"
-#import "RssRootController.h"
+#import "XMRssRootController.h"
 #import "FindRootController.h"
 #import "DestRootController.h"
 #import "DynamicRootController.h"
 #import "SquareRootController.h"
 #import "XMFindRootController.h"
+#import "XMHomeRootController.h"
 
 @interface RootTabViewController ()
 
@@ -52,21 +53,24 @@
     RecommendViewController *vc_recommend=[[RecommendViewController alloc] init];
     XMNavigationViewController *nav_recommend=[[XMNavigationViewController alloc] initWithRootViewController:vc_recommend];
     
-    RssRootController *vc_rss=[[RssRootController alloc] init];
+    XMHomeRootController *vc_home = [[XMHomeRootController alloc] init];
+    XMNavigationViewController *nav_home = [[XMNavigationViewController alloc] initWithRootViewController:vc_home];
+    
+    XMRssRootController *vc_rss=[[XMRssRootController alloc] init];
     XMNavigationViewController *nav_rss=[[XMNavigationViewController alloc] initWithRootViewController:vc_rss];
     
-    FindRootController *nav_find=[FindRootController newSwipeBetweenViewControllers];
-    [nav_find.viewControllerArray addObjectsFromArray:@[[[DestRootController alloc] init],
+    FindRootController *nav_rss2=[FindRootController newSwipeBetweenViewControllers];
+    [nav_rss2.viewControllerArray addObjectsFromArray:@[[[DestRootController alloc] init],
                                                         [[DynamicRootController alloc] init],
                                                         [[SquareRootController alloc] init]]];
-    nav_find.buttonText=@[@"目的地",@"摄影师动态",@"广场"];
-    nav_find.buttonImages=@[@"nav_title_img_dest",@"nav_title_img_dynamic",@"nav_title_img_square"];
-    nav_find.pageSelected=@[@"nav_page_selected_yellow",@"nav_page_selected_green",@"nav_page_selected_red"];
-    nav_find.pageUnselected=@[@"nav_page_unselected",@"nav_page_unselected",@"nav_page_unselected"];
+    nav_rss2.buttonText=@[@"目的地",@"摄影师动态",@"广场"];
+    nav_rss2.buttonImages=@[@"nav_title_img_dest",@"nav_title_img_dynamic",@"nav_title_img_square"];
+    nav_rss2.pageSelected=@[@"nav_page_selected_yellow",@"nav_page_selected_green",@"nav_page_selected_red"];
+    nav_rss2.pageUnselected=@[@"nav_page_unselected",@"nav_page_unselected",@"nav_page_unselected"];
     
 
-    XMFindRootController *vc_xfind=[[XMFindRootController alloc] init];
-    XMNavigationViewController *nav_xfind=[[XMNavigationViewController alloc] initWithRootViewController:vc_xfind];
+    XMFindRootController *vc_find=[[XMFindRootController alloc] init];
+    XMNavigationViewController *nav_find=[[XMNavigationViewController alloc] initWithRootViewController:vc_find];
     
     /*
     DiscoverRootController *vc_discover=[[DiscoverRootController alloc] initWithNibName:@"DiscoverRootController" bundle:nil];
@@ -84,7 +88,7 @@
     XMNavigationViewController *nav_me;
     nav_me = [[XMNavigationViewController alloc] initWithRootViewController:vc_mephotog];
     */
-    [self setViewControllers:@[nav_recommend,nav_rss,nav_find,nav_xfind]];
+    [self setViewControllers:@[nav_home,nav_rss,nav_find,nav_rss2]];
     [self customizeTabBarForController];
     self.delegate=self;
     self.selectedIndex = 0;
