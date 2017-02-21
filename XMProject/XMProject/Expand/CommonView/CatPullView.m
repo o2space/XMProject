@@ -66,8 +66,8 @@
     if (!_eyeLeftLayer) {
         _eyeLeftLayer = [CAShapeLayer layer];
         UIBezierPath *bezier = [UIBezierPath bezierPath];
-        [bezier moveToPoint:CGPointMake((14)*_zoom, 19*_zoom)];
-        [bezier addLineToPoint:CGPointMake((21)*_zoom, 19*_zoom)];
+        [bezier moveToPoint:CGPointMake((14-4)*_zoom, 19*_zoom)];
+        [bezier addLineToPoint:CGPointMake((21-4)*_zoom, 19*_zoom)];
         
         //[bezier moveToPoint:CGPointMake((14-5)*_zoom, 19*_zoom)];
         //[bezier addLineToPoint:CGPointMake((21+5)*_zoom, 19*_zoom)];
@@ -85,8 +85,8 @@
         _eyeRightLayer = [CAShapeLayer layer];
         //46x46
         UIBezierPath *bezier = [UIBezierPath bezierPath];
-        [bezier moveToPoint:CGPointMake((46-21)*_zoom, 19*_zoom)];
-        [bezier addLineToPoint:CGPointMake((46-14)*_zoom, 19*_zoom)];
+        [bezier moveToPoint:CGPointMake((46-21-4)*_zoom, 19*_zoom)];
+        [bezier addLineToPoint:CGPointMake((46-14-4)*_zoom, 19*_zoom)];
         //[bezier moveToPoint:CGPointMake((46-21-5)*_zoom, 19*_zoom)];
         //[bezier addLineToPoint:CGPointMake((46-14+5)*_zoom, 19*_zoom)];
         

@@ -33,7 +33,7 @@
 - (void)prepare
 {
     [super prepare];
-    self.mj_h = MJRefreshHeaderHeight + 10;
+    self.mj_h = MJRefreshHeaderHeight + 18;
     self.automaticallyChangeAlpha = NO;
 }
 - (void)placeSubviews
@@ -59,35 +59,46 @@
 }
 
 - (void)setPullingPercent:(CGFloat)pullingPercent{
-    [super setPullingPercent:pullingPercent];
-    //NSLog(@"pullingPercent:%lf",pullingPercent);
-    if (pullingPercent<0.016) {
-        pullingPercent = 0;
+    
+    if (self.state == MJRefreshStateRefreshing) {
+        self.alpha = 1.0;
+        [self.catGif animationIdle:1.0];
     }
     if (self.state == MJRefreshStateIdle) {
-        if (pullingPercent>0 && self.oldState != MJRefreshStateRefreshing) {
-            self.alpha = 1.0;
-            [self.catGif animationIdle:pullingPercent];
-        }
-        if (pullingPercent == 0.0) {
+        if (pullingPercent>0 && self.oldState == MJRefreshStateRefreshing) {
+            NSLog(@"aaaa:1111111");
             self.alpha = 0.0;
-            self.oldState = MJRefreshStateIdle;
+            [self.catGif animationIdle:1];
+        }else if (pullingPercent ==0 && self.oldState == MJRefreshStateRefreshing) {
+            NSLog(@"aaaa:2222222");
+            self.alpha = 0.0;
             [self.catGif animationIdle:0];
+            self.oldState = MJRefreshStateIdle;
+        }else if (pullingPercent>0){
+            NSLog(@"aaaa:3333333");
+            self.alpha = 1;
+            [self.catGif animationIdle:pullingPercent];
+        }else if(pullingPercent == 0){
+            self.alpha = 0;
         }
-        
     }
+    [super setPullingPercent:pullingPercent];
+    NSLog(@"pullingPercent:%f",pullingPercent);
 }
 
 - (void)setState:(MJRefreshState)state
 {
-    MJRefreshCheckState
+    //MJRefreshCheckState
+    MJRefreshState oldState = self.state;
+    if (state == oldState) return;
+    if (state == MJRefreshStateIdle && oldState == MJRefreshStateRefreshing) {
+        self.alpha = 0.0;
+    }
+    [super setState:state];
     self.oldState = oldState;
+    NSLog(@"refresh oldState:%ld,currState:%ld",self.oldState,state);
     if (state == MJRefreshStateIdle) {
-        if (oldState == MJRefreshStateRefreshing) {
-            self.alpha = 0;
-            self.pullingPercent = 1;
-            [self.catGif animationIdle:1];
-        }
+
     }else if (state == MJRefreshStatePulling){
         [self.catGif animationPulling:1];
     }else if (state == MJRefreshStateWillRefresh){

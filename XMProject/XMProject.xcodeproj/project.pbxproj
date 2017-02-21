@@ -17,6 +17,7 @@
 		161ABC841E02DF68004C7C6E /* CityHeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */; };
 		161ABC881E02E166004C7C6E /* XMRssRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ABC861E02E166004C7C6E /* XMRssRootController.m */; };
 		161ABC891E02E166004C7C6E /* XMRssRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ABC871E02E166004C7C6E /* XMRssRootController.xib */; };
+		1644048C1E111CCF00B7412F /* XMHomeHotViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1644048B1E111CCF00B7412F /* XMHomeHotViewModel.m */; };
 		165E0AB21E0B86EB00474F96 /* XMFindRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */; };
 		16612C9E1E0386DA00B21FEE /* demo_20160508.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C5E1E0386DA00B21FEE /* demo_20160508.png */; };
 		16612C9F1E0386DA00B21FEE /* demo_card_city.png in Resources */ = {isa = PBXBuildFile; fileRef = 16612C5F1E0386DA00B21FEE /* demo_card_city.png */; };
@@ -88,6 +89,9 @@
 		166351791E0A87DE000E4711 /* XMTitleValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166351781E0A87DE000E4711 /* XMTitleValueCell.m */; };
 		1663517C1E0A880E000E4711 /* XMTitleValueMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663517B1E0A880E000E4711 /* XMTitleValueMoreCell.m */; };
 		1663517F1E0A94A7000E4711 /* XMImageTitleValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663517E1E0A94A7000E4711 /* XMImageTitleValueCell.m */; };
+		166875CE1E1E5AEE00A3C446 /* XMMemberRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 166875CD1E1E5AEE00A3C446 /* XMMemberRootModel.m */; };
+		166875D11E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 166875D01E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.m */; };
+		166875D41E1E69A100A3C446 /* XMGuessRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 166875D31E1E69A100A3C446 /* XMGuessRootModel.m */; };
 		16690D391DFEA9B30053A30B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D381DFEA9B30053A30B /* main.m */; };
 		16690D3C1DFEA9B30053A30B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D3B1DFEA9B30053A30B /* AppDelegate.m */; };
 		16690D3F1DFEA9B30053A30B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16690D3E1DFEA9B30053A30B /* ViewController.m */; };
@@ -154,6 +158,10 @@
 		1677891F1E02C44600CC80B4 /* XMRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */; };
 		167789201E02C44600CC80B4 /* XMRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */; };
 		167789251E02CB9800CC80B4 /* PushAlbumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */; };
+		167B1D4F1E1F3BED00C1E6AE /* XMCityColumnRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D4E1E1F3BED00C1E6AE /* XMCityColumnRootModel.m */; };
+		167B1D521E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D511E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m */; };
+		167B1D551E1F43DA00C1E6AE /* XMLiveRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D541E1F43DA00C1E6AE /* XMLiveRootModel.m */; };
+		167B1D581E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D571E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m */; };
 		1683527B1E0FB3B200B8A4E9 /* XMHomeRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */; };
 		1683527E1E0FB85600B8A4E9 /* XMSubHomeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683527D1E0FB85600B8A4E9 /* XMSubHomeFactory.m */; };
 		168352821E0FC04300B8A4E9 /* XMHomeSubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 168352811E0FC04300B8A4E9 /* XMHomeSubTitleView.m */; };
@@ -184,6 +192,8 @@
 		161ABC851E02E166004C7C6E /* XMRssRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRssRootController.h; sourceTree = "<group>"; };
 		161ABC861E02E166004C7C6E /* XMRssRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRssRootController.m; sourceTree = "<group>"; };
 		161ABC871E02E166004C7C6E /* XMRssRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMRssRootController.xib; sourceTree = "<group>"; };
+		1644048A1E111CCF00B7412F /* XMHomeHotViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHomeHotViewModel.h; sourceTree = "<group>"; };
+		1644048B1E111CCF00B7412F /* XMHomeHotViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHomeHotViewModel.m; sourceTree = "<group>"; };
 		165E0AB01E0B86EB00474F96 /* XMFindRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFindRootModel.h; sourceTree = "<group>"; };
 		165E0AB11E0B86EB00474F96 /* XMFindRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFindRootModel.m; sourceTree = "<group>"; };
 		16612C5E1E0386DA00B21FEE /* demo_20160508.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_20160508.png; sourceTree = "<group>"; };
@@ -261,6 +271,12 @@
 		1663517B1E0A880E000E4711 /* XMTitleValueMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTitleValueMoreCell.m; sourceTree = "<group>"; };
 		1663517D1E0A94A7000E4711 /* XMImageTitleValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMImageTitleValueCell.h; sourceTree = "<group>"; };
 		1663517E1E0A94A7000E4711 /* XMImageTitleValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMImageTitleValueCell.m; sourceTree = "<group>"; };
+		166875CC1E1E5AEE00A3C446 /* XMMemberRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMemberRootModel.h; sourceTree = "<group>"; };
+		166875CD1E1E5AEE00A3C446 /* XMMemberRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMemberRootModel.m; sourceTree = "<group>"; };
+		166875CF1E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMDiscoveryColumnsRootModel.h; sourceTree = "<group>"; };
+		166875D01E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMDiscoveryColumnsRootModel.m; sourceTree = "<group>"; };
+		166875D21E1E69A100A3C446 /* XMGuessRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGuessRootModel.h; sourceTree = "<group>"; };
+		166875D31E1E69A100A3C446 /* XMGuessRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGuessRootModel.m; sourceTree = "<group>"; };
 		16690D341DFEA9B30053A30B /* XMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16690D381DFEA9B30053A30B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16690D3A1DFEA9B30053A30B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -379,6 +395,14 @@
 		167789171E02C44600CC80B4 /* XMRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshFooterView.swift; sourceTree = "<group>"; };
 		167789181E02C44600CC80B4 /* XMRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMRefreshHeaderView.swift; sourceTree = "<group>"; };
 		167789231E02CB9800CC80B4 /* PushAlbumCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAlbumCollectionCell.xib; sourceTree = "<group>"; };
+		167B1D4D1E1F3BED00C1E6AE /* XMCityColumnRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCityColumnRootModel.h; sourceTree = "<group>"; };
+		167B1D4E1E1F3BED00C1E6AE /* XMCityColumnRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCityColumnRootModel.m; sourceTree = "<group>"; };
+		167B1D501E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHotRecommendsRootModel.h; sourceTree = "<group>"; };
+		167B1D511E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHotRecommendsRootModel.m; sourceTree = "<group>"; };
+		167B1D531E1F43DA00C1E6AE /* XMLiveRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLiveRootModel.h; sourceTree = "<group>"; };
+		167B1D541E1F43DA00C1E6AE /* XMLiveRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLiveRootModel.m; sourceTree = "<group>"; };
+		167B1D561E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMEditorRecommendsRootModel.h; sourceTree = "<group>"; };
+		167B1D571E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMEditorRecommendsRootModel.m; sourceTree = "<group>"; };
 		168352791E0FB3B200B8A4E9 /* XMHomeRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHomeRootController.h; sourceTree = "<group>"; };
 		1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHomeRootController.m; sourceTree = "<group>"; };
 		1683527C1E0FB85600B8A4E9 /* XMSubHomeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSubHomeFactory.h; sourceTree = "<group>"; };
@@ -451,6 +475,102 @@
 				161ABC7C1E02DF68004C7C6E /* CityHeadCollectionReusableView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		164404801E111BA600B7412F /* TypeAnchor(主播) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TypeAnchor(主播)";
+			path = TypeAnchor;
+			sourceTree = "<group>";
+		};
+		164404811E111BA600B7412F /* TypeCategory(分类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TypeCategory(分类)";
+			path = TypeCategory;
+			sourceTree = "<group>";
+		};
+		164404821E111BA600B7412F /* TypeHot(热门) */ = {
+			isa = PBXGroup;
+			children = (
+				164404871E111CA200B7412F /* Model */,
+				164404881E111CA200B7412F /* View */,
+				164404891E111CA200B7412F /* ViewModel */,
+			);
+			name = "TypeHot(热门)";
+			path = TypeHot;
+			sourceTree = "<group>";
+		};
+		164404831E111BA600B7412F /* TypeRadio(广播) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TypeRadio(广播)";
+			path = TypeRadio;
+			sourceTree = "<group>";
+		};
+		164404841E111BA600B7412F /* TypeRand(榜单) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TypeRand(榜单)";
+			path = TypeRand;
+			sourceTree = "<group>";
+		};
+		164404851E111BA600B7412F /* TypeRecommend(推荐) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TypeRecommend(推荐)";
+			path = TypeRecommend;
+			sourceTree = "<group>";
+		};
+		164404861E111BA600B7412F /* TypeUnkown(未知) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TypeUnkown(未知)";
+			path = TypeUnkown;
+			sourceTree = "<group>";
+		};
+		164404871E111CA200B7412F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				166875CC1E1E5AEE00A3C446 /* XMMemberRootModel.h */,
+				166875CD1E1E5AEE00A3C446 /* XMMemberRootModel.m */,
+				166875CF1E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.h */,
+				166875D01E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.m */,
+				166875D21E1E69A100A3C446 /* XMGuessRootModel.h */,
+				166875D31E1E69A100A3C446 /* XMGuessRootModel.m */,
+				167B1D4D1E1F3BED00C1E6AE /* XMCityColumnRootModel.h */,
+				167B1D4E1E1F3BED00C1E6AE /* XMCityColumnRootModel.m */,
+				167B1D501E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.h */,
+				167B1D511E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m */,
+				167B1D531E1F43DA00C1E6AE /* XMLiveRootModel.h */,
+				167B1D541E1F43DA00C1E6AE /* XMLiveRootModel.m */,
+				167B1D561E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.h */,
+				167B1D571E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		164404881E111CA200B7412F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		164404891E111CA200B7412F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1644048A1E111CCF00B7412F /* XMHomeHotViewModel.h */,
+				1644048B1E111CCF00B7412F /* XMHomeHotViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		165E0AAF1E0B866400474F96 /* Model */ = {
@@ -726,6 +846,13 @@
 		16690D671DFEB12D0053A30B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				164404851E111BA600B7412F /* TypeRecommend(推荐) */,
+				164404821E111BA600B7412F /* TypeHot(热门) */,
+				164404811E111BA600B7412F /* TypeCategory(分类) */,
+				164404831E111BA600B7412F /* TypeRadio(广播) */,
+				164404841E111BA600B7412F /* TypeRand(榜单) */,
+				164404801E111BA600B7412F /* TypeAnchor(主播) */,
+				164404861E111BA600B7412F /* TypeUnkown(未知) */,
 				1683527F1E0FC00800B8A4E9 /* View */,
 				168352791E0FB3B200B8A4E9 /* XMHomeRootController.h */,
 				1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */,
@@ -1308,15 +1435,20 @@
 				1677891C1E02C44600CC80B4 /* UIView+XM.swift in Sources */,
 				1677888C1E02BCCD00CC80B4 /* AlbumCardMoreCell.m in Sources */,
 				16690D3F1DFEA9B30053A30B /* ViewController.m in Sources */,
+				166875D11E1E5D9F00A3C446 /* XMDiscoveryColumnsRootModel.m in Sources */,
 				1677888A1E02BCCD00CC80B4 /* AlbumCardItemView.m in Sources */,
 				167788EE1E02C16B00CC80B4 /* UIView+MJExtension.m in Sources */,
 				1677891F1E02C44600CC80B4 /* XMRefreshFooterView.swift in Sources */,
+				166875CE1E1E5AEE00A3C446 /* XMMemberRootModel.m in Sources */,
 				167788E51E02C16B00CC80B4 /* MJRefreshBackNormalFooter.m in Sources */,
+				166875D41E1E69A100A3C446 /* XMGuessRootModel.m in Sources */,
 				16690D901DFEB5360053A30B /* XMLoginTool.m in Sources */,
 				1688EF6E1E0D126F00345771 /* CatPullView.m in Sources */,
+				167B1D551E1F43DA00C1E6AE /* XMLiveRootModel.m in Sources */,
 				16690D661DFEACE00053A30B /* XMNetworkManager.m in Sources */,
 				165E0AB21E0B86EB00474F96 /* XMFindRootModel.m in Sources */,
 				161ABC801E02DF68004C7C6E /* SquareRootController.m in Sources */,
+				1644048C1E111CCF00B7412F /* XMHomeHotViewModel.m in Sources */,
 				167788DF1E02C16B00CC80B4 /* MJRefreshFooter.m in Sources */,
 				161ABC831E02DF68004C7C6E /* CityHeadCollectionReusableView.m in Sources */,
 				161ABC7E1E02DF68004C7C6E /* DynamicRootController.m in Sources */,
@@ -1325,6 +1457,7 @@
 				167788E01E02C16B00CC80B4 /* MJRefreshHeader.m in Sources */,
 				1677891D1E02C44600CC80B4 /* XMRefreshBase.swift in Sources */,
 				1677891B1E02C44600CC80B4 /* UIScrollView+XM.swift in Sources */,
+				167B1D581E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m in Sources */,
 				167788EB1E02C16B00CC80B4 /* MJRefreshConst.m in Sources */,
 				16690DA91DFEC5FB0053A30B /* NSString+Extension.m in Sources */,
 				16690D651DFEACE00053A30B /* XMEncryptTool.m in Sources */,
@@ -1361,6 +1494,7 @@
 				16690D3C1DFEA9B30053A30B /* AppDelegate.m in Sources */,
 				16690DA21DFEC25A0053A30B /* UIBadgeView.m in Sources */,
 				168352861E0FDFCC00B8A4E9 /* XMPageViewController.m in Sources */,
+				167B1D521E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m in Sources */,
 				168352821E0FC04300B8A4E9 /* XMHomeSubTitleView.m in Sources */,
 				167788ED1E02C16B00CC80B4 /* UIScrollView+MJRefresh.m in Sources */,
 				166351761E0A827B000E4711 /* UITableView+Common.m in Sources */,
@@ -1373,6 +1507,7 @@
 				1688EF631E0CD8BB00345771 /* NetworkTools.m in Sources */,
 				1688EF711E0D2F6D00345771 /* BaseViewController.m in Sources */,
 				161ABC7F1E02DF68004C7C6E /* FindRootController.m in Sources */,
+				167B1D4F1E1F3BED00C1E6AE /* XMCityColumnRootModel.m in Sources */,
 				167788901E02BCCD00CC80B4 /* ChoiceCardItemView.m in Sources */,
 				16690D391DFEA9B30053A30B /* main.m in Sources */,
 				161ABC7D1E02DF68004C7C6E /* DestRootController.m in Sources */,

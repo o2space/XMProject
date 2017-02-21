@@ -28,7 +28,6 @@
     self.automaticallyAdjustsScrollViewInsets = YES;
     [self setupNavBar];
     [self initMyTableView];
-    
     NSLog(@"1--------Find view height:%lf",self.view.height);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSLog(@"2--------Find view height:%lf",self.view.height);
@@ -52,7 +51,10 @@
     _viewModel = [[XMFindViewModel alloc] init];
     _viewModel.updateBlock = ^(){
         [weakSelf.myTableView reloadData];
-        [weakSelf.myTableView.mj_header endRefreshing];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.myTableView.mj_header endRefreshing];
+        });
+        
     };
     MJRefresCatHeader *header = [MJRefresCatHeader headerWithRefreshingBlock:^{
         [_viewModel refreshDataSource];
