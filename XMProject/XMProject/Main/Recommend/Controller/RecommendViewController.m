@@ -45,6 +45,7 @@
     //self.automaticallyAdjustsScrollViewInsets=NO;
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.translucent = YES;
+    [self setupNavBar];
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     //self.navigationController.navigationBar.shadowImage = [UIImage new];
     
@@ -96,6 +97,13 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     //self.navigationController.navigationBarHidden = YES;
+}
+- (void)setupNavBar{
+    self.title = @"测试";
+    [self addLeftButtonWithImageName:@"btn_back_n" Target:self Action:@selector(backBtn:)];
+}
+-(void)backBtn:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];

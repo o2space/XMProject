@@ -40,6 +40,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupViewControllers];
+    
+    UIImageView *iv_a = [[UIImageView alloc] initWithFrame:CGRectMake((kScreen_Width-75)/2.0, 49 - 65, 75, 65)];
+    iv_a.image = [UIImage imageNamed:@"tabbar_np_shadow"];
+    iv_a.contentMode = UIViewContentModeScaleAspectFill;
+    [self.tabBar addSubview:iv_a];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_Width-65)/2.0, 49 - 65, 65, 65)];
+    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateHighlighted];
+    btn.contentMode = UIViewContentModeScaleAspectFill;
+    [self.tabBar addSubview:btn];
+    btn.userInteractionEnabled = YES;
+    
+    self.tabBar.clipsToBounds = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,6 +72,9 @@
     
     XMRssRootController *vc_rss=[[XMRssRootController alloc] init];
     XMNavigationViewController *nav_rss=[[XMNavigationViewController alloc] initWithRootViewController:vc_rss];
+    
+    RootViewController *vc_other = [[RootViewController alloc] init];
+    XMNavigationViewController *nav_other = [[XMNavigationViewController alloc] initWithRootViewController:vc_other];
     
     FindRootController *nav_rss2=[FindRootController newSwipeBetweenViewControllers];
     [nav_rss2.viewControllerArray addObjectsFromArray:@[[[DestRootController alloc] init],
@@ -88,7 +105,7 @@
     XMNavigationViewController *nav_me;
     nav_me = [[XMNavigationViewController alloc] initWithRootViewController:vc_mephotog];
     */
-    [self setViewControllers:@[nav_home,nav_rss,nav_find,nav_rss2]];
+    [self setViewControllers:@[nav_home,nav_rss,nav_other,nav_find,nav_rss2]];
     [self customizeTabBarForController];
     self.delegate=self;
     self.selectedIndex = 0;
@@ -101,8 +118,9 @@
     iv.image = [UIImage imageNamed:@"tabbar_split_Image"];
     iv.contentMode = UIViewContentModeScaleAspectFill;
     [self.tabBar addSubview:iv];
-    NSArray *tabBarItemImages=@[@"tabbar_icon_homepage",@"tabbar_icon_Rss",@"tabbar_icon_find",@"tabbar_icon_my"];
-    NSArray *tabBarItemTitles = @[@"首页", @"订阅",@"发现", @"我的"];
+    NSArray *tabBarItemImages=@[@"tabbar_icon_homepage",@"tabbar_icon_Rss",@"",@"tabbar_icon_find",@"tabbar_icon_my"];
+    //tabbar_np_normal tabbar_np_shadow
+    NSArray *tabBarItemTitles = @[@"首页", @"订阅", @"", @"发现", @"我的"];
     NSInteger index = 0;
     
     for (RDVTabBarItem *item in [[self tabBar] items]) {
@@ -112,7 +130,11 @@
                                                       [tabBarItemImages objectAtIndex:index]]];//_selected
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
                                                         [tabBarItemImages objectAtIndex:index]]];//_normal
-        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        if (index == 2) {
+            [item setFinishedSelectedImage:nil withFinishedUnselectedImage:nil];
+        }else{
+            [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        }
         /*
         [item setTitle:[tabBarItemTitles objectAtIndex:index]];
         item.unselectedTitleAttributes = @{
@@ -126,6 +148,7 @@
          */
         index++;
     }
+
 }
 
 #pragma mark RDVTabBarControllerDelegate

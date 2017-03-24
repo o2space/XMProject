@@ -13,6 +13,8 @@
 #import "XMFindViewModel.h"
 #import "MJRefresCatHeader.h"
 
+#import "RecommendViewController.h"
+
 @interface XMFindRootController ()<UITableViewDataSource,UITableViewDelegate>
 @property(weak, nonatomic)IBOutlet UITableView *myTableView;
 
@@ -148,6 +150,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:[[RecommendViewController alloc] init] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
