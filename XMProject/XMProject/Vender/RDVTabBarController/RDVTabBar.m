@@ -169,4 +169,19 @@
                                                         alpha:alpha]];
 }
 
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+    NSLog(@"point:%ld,%ld",(long)point.x,(long)point.y);
+    BOOL isClick = [super pointInside:point withEvent:event];
+    if (isClick) {
+        return isClick;
+    }
+    if (!isClick) {
+        CGFloat temp_w = self.frame.size.width;
+        if ((point.y > -(65-49) && point.y < 0) && (point.x > temp_w/2.0 - 65 && point.x < temp_w/2.0 + 65)) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 @end

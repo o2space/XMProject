@@ -54,13 +54,14 @@
     btn.userInteractionEnabled = YES;
     
     self.tabBar.clipsToBounds = NO;
+    //self.tabBar.height = 65;
+    //self.view
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 -(void)setupViewControllers{
     
