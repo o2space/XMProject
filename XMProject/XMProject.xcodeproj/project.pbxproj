@@ -162,6 +162,7 @@
 		167B1D521E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D511E1F3D2C00C1E6AE /* XMHotRecommendsRootModel.m */; };
 		167B1D551E1F43DA00C1E6AE /* XMLiveRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D541E1F43DA00C1E6AE /* XMLiveRootModel.m */; };
 		167B1D581E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 167B1D571E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m */; };
+		167F93A71E8CAFE700A93732 /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F93A61E8CAFE700A93732 /* AnimationButton.m */; };
 		1683527B1E0FB3B200B8A4E9 /* XMHomeRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */; };
 		1683527E1E0FB85600B8A4E9 /* XMSubHomeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683527D1E0FB85600B8A4E9 /* XMSubHomeFactory.m */; };
 		168352821E0FC04300B8A4E9 /* XMHomeSubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 168352811E0FC04300B8A4E9 /* XMHomeSubTitleView.m */; };
@@ -403,6 +404,8 @@
 		167B1D541E1F43DA00C1E6AE /* XMLiveRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLiveRootModel.m; sourceTree = "<group>"; };
 		167B1D561E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMEditorRecommendsRootModel.h; sourceTree = "<group>"; };
 		167B1D571E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMEditorRecommendsRootModel.m; sourceTree = "<group>"; };
+		167F93A51E8CAFE700A93732 /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
+		167F93A61E8CAFE700A93732 /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
 		168352791E0FB3B200B8A4E9 /* XMHomeRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHomeRootController.h; sourceTree = "<group>"; };
 		1683527A1E0FB3B200B8A4E9 /* XMHomeRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHomeRootController.m; sourceTree = "<group>"; };
 		1683527C1E0FB85600B8A4E9 /* XMSubHomeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSubHomeFactory.h; sourceTree = "<group>"; };
@@ -1203,6 +1206,8 @@
 				1688EF6D1E0D126F00345771 /* CatPullView.m */,
 				1688EF691E0D123200345771 /* MJRefresCatHeader.h */,
 				1688EF6A1E0D123200345771 /* MJRefresCatHeader.m */,
+				167F93A51E8CAFE700A93732 /* AnimationButton.h */,
+				167F93A61E8CAFE700A93732 /* AnimationButton.m */,
 			);
 			name = "CommonView(视图)";
 			path = CommonView;
@@ -1457,6 +1462,7 @@
 				167788E01E02C16B00CC80B4 /* MJRefreshHeader.m in Sources */,
 				1677891D1E02C44600CC80B4 /* XMRefreshBase.swift in Sources */,
 				1677891B1E02C44600CC80B4 /* UIScrollView+XM.swift in Sources */,
+				167F93A71E8CAFE700A93732 /* AnimationButton.m in Sources */,
 				167B1D581E1F4ECF00C1E6AE /* XMEditorRecommendsRootModel.m in Sources */,
 				167788EB1E02C16B00CC80B4 /* MJRefreshConst.m in Sources */,
 				16690DA91DFEC5FB0053A30B /* NSString+Extension.m in Sources */,
