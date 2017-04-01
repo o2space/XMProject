@@ -48,7 +48,7 @@
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake((kScreen_Width-65)/2.0, 49 - 65, 65, 65)];
     [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateNormal];
-    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateHighlighted];
+    //[btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateHighlighted];
     btn.contentMode = UIViewContentModeScaleAspectFill;
     [self.tabBar addSubview:btn];
     btn.userInteractionEnabled = YES;
